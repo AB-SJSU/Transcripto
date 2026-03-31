@@ -58,7 +58,8 @@ pip install -r requirements.txt
 sudo apt install ffmpeg -y
 ```
 ### 4. Verify Whisper Installation
-```python verify.py
+```
+python verify.py
 ```
 Expected output:
 
@@ -70,7 +71,8 @@ wget https://github.com/openai/whisper/raw/main/tests/jfk.flac -O test.wav
 python pipeline_test.py
 ```
 ### 6. Upload Test Audio to S3
-```aws s3 cp test.wav s3://transcripto-audio-bucket/audio/test.wav
+```
+aws s3 cp test.wav s3://transcripto-audio-bucket/audio/test.wav
 ```
 ### 7. Send SQS Job
 ```
