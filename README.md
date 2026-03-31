@@ -1,11 +1,11 @@
 # Transcripto
-# 🎙️ Transcripto ML Worker (Day 1)
+#  Transcripto ML Worker (Day 1)
 
 This project implements a distributed ML worker for audio transcription using OpenAI Whisper on AWS.
 
 ---
 
-## 🚀 System Overview
+##  System Overview
 
 Pipeline:
 
@@ -13,7 +13,7 @@ SQS → EC2 Worker → S3 (audio) → Whisper → S3 (transcript) → DynamoDB
 
 ---
 
-## ✅ Day 1 Features
+##  Day 1 Tasks
 
 - EC2 worker setup (CPU/GPU compatible)
 - Whisper model preloaded at startup (not per job)
@@ -26,7 +26,7 @@ SQS → EC2 Worker → S3 (audio) → Whisper → S3 (transcript) → DynamoDB
 
 ---
 
-## 🧠 Tech Stack
+##  Tech Stack
 
 - Python 3.12
 - OpenAI Whisper
@@ -37,7 +37,7 @@ SQS → EC2 Worker → S3 (audio) → Whisper → S3 (transcript) → DynamoDB
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### 1. Connect to EC2
 
