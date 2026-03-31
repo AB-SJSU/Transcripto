@@ -7,3 +7,9 @@ aakruti-day-one.md
 
 #library
 transcripto-api/api-venv
+
+#python
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
