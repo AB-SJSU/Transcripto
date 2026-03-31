@@ -1,0 +1,9 @@
+#envs
+transcripto-api/.env
+
+#misc
+aakruti-day-one.md
+.claude
+
+#library
+transcripto-api/api-venv
