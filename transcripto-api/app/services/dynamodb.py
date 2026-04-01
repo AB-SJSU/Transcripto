@@ -3,6 +3,7 @@ from datetime import datetime, timezone
 from boto3.dynamodb.conditions import Attr
 from botocore.exceptions import ClientError
 from app.config import settings
+from app.utils.retry import with_retries
 
 dynamodb = boto3.resource(
     "dynamodb",
@@ -13,6 +14,7 @@ dynamodb = boto3.resource(
 table = dynamodb.Table(settings.dynamodb_table_name)
 
 
+@with_retries(max_attempts=3, base_delay=0.5)
 def create_job(job_id: str, user_id: str, s3_key: str) -> dict:
     """Write a new PENDING job record to DynamoDB."""
     now = datetime.now(timezone.utc).isoformat()
@@ -31,12 +33,14 @@ def create_job(job_id: str, user_id: str, s3_key: str) -> dict:
     return item
 
 
+@with_retries(max_attempts=3, base_delay=0.5)
 def get_job(job_id: str) -> dict | None:
     """Fetch a job record by jobId. Returns None if not found."""
     response = table.get_item(Key={"jobId": job_id})
     return response.get("Item")
 
 
+@with_retries(max_attempts=3, base_delay=0.5)
 def update_job_status(
     job_id: str,
     status: str,

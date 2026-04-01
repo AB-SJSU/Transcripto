@@ -1,5 +1,6 @@
 import boto3
 from app.config import settings
+from app.utils.retry import with_retries
 
 s3_client = boto3.client(
     "s3",
@@ -9,6 +10,7 @@ s3_client = boto3.client(
 )
 
 
+@with_retries(max_attempts=3, base_delay=0.5)
 def generate_presigned_upload_url(s3_key: str, content_type: str) -> str:
     """
     Generate a presigned PUT URL so the client uploads directly to S3.

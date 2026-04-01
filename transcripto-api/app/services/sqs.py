@@ -1,6 +1,7 @@
 import boto3
 import json
 from app.config import settings
+from app.utils.retry import with_retries
 
 sqs_client = boto3.client(
     "sqs",
@@ -10,6 +11,7 @@ sqs_client = boto3.client(
 )
 
 
+@with_retries(max_attempts=3, base_delay=1.0)
 def publish_job_message(job_id: str, user_id: str, s3_key: str) -> str:
     """
     Publish a transcription job message to SQS.
