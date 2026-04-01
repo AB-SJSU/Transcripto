@@ -1,10 +1,13 @@
 from pydantic_settings import BaseSettings
+from typing import Optional
 
 
 class Settings(BaseSettings):
-    aws_region: str
-    aws_access_key_id: str
-    aws_secret_access_key: str
+    aws_region: str = "us-east-1"
+
+    # Optional — boto3 falls back to EC2 instance profile if not set
+    aws_access_key_id: Optional[str] = None
+    aws_secret_access_key: Optional[str] = None
 
     s3_audio_bucket: str
     s3_transcript_bucket: str

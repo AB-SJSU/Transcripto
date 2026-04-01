@@ -1,4 +1,5 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
+from fastapi.responses import RedirectResponse
 from app.routes import upload, status
 
 app = FastAPI(
@@ -6,6 +7,14 @@ app = FastAPI(
     description="Async audio transcription platform — CMPE 281",
     version="1.0.0",
 )
+
+@app.middleware("http")
+async def force_https(request: Request, call_next):
+    if request.headers.get("x-forwarded-proto") == "http":
+        url = request.url.replace(scheme="https")
+        return RedirectResponse(url=str(url), status_code=301)
+    return await call_next(request)
+
 
 app.include_router(upload.router, tags=["jobs"])
 app.include_router(status.router, tags=["jobs"])

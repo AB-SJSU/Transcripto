@@ -5,13 +5,15 @@ from botocore.exceptions import ClientError
 from app.config import settings
 from app.utils.retry import with_retries
 
-dynamodb = boto3.resource(
-    "dynamodb",
-    region_name=settings.aws_region,
-    aws_access_key_id=settings.aws_access_key_id,
-    aws_secret_access_key=settings.aws_secret_access_key,
-)
-table = dynamodb.Table(settings.dynamodb_table_name)
+def _get_resource(service: str):
+    kwargs = {"region_name": settings.aws_region}
+    if settings.aws_access_key_id:
+        kwargs["aws_access_key_id"] = settings.aws_access_key_id
+        kwargs["aws_secret_access_key"] = settings.aws_secret_access_key
+    return boto3.resource(service, **kwargs)
+
+
+table = _get_resource("dynamodb").Table(settings.dynamodb_table_name)
 
 
 @with_retries(max_attempts=3, base_delay=0.5)
