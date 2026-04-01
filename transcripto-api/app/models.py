@@ -23,5 +23,6 @@ class StatusResponse(BaseModel):
     updated_at: str
     input_s3_path: Optional[str] = None
     output_s3_path: Optional[str] = None
+    transcript_url: Optional[str] = None
     error_message: Optional[str] = None
     retry_count: int = 0

@@ -23,6 +23,7 @@ async def get_job_status(job_id: str):
         updated_at=job["updatedAt"],
         input_s3_path=job.get("inputS3Path"),
         output_s3_path=job.get("outputS3Path"),
+        transcript_url=job.get("transcriptUrl"),
         error_message=job.get("errorMessage"),
-        retry_count=job.get("retryCount", 0),
+        retry_count=int(job.get("retryCount", 0)),
     )
