@@ -27,6 +27,10 @@ transcripto-api/tests/fixtures/*.wav
 #pytest
 .pytest_cache/
 
+# frontend
+transcripto-ui/node_modules/
+transcripto-ui/dist/
+
 
 aakruti-day-one.md
 aakruti-day-two.md
