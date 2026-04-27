@@ -457,6 +457,3 @@ Worker sends:
 * Auto-scaling workers
 
 ---
-
-
-ML Worker Lead — Transcripto
