@@ -3,12 +3,16 @@ import json
 from app.config import settings
 from app.utils.retry import with_retries
 
-sqs_client = boto3.client(
-    "sqs",
-    region_name=settings.aws_region,
-    aws_access_key_id=settings.aws_access_key_id,
-    aws_secret_access_key=settings.aws_secret_access_key,
-)
+
+def _get_client(service: str):
+    kwargs = {"region_name": settings.aws_region}
+    if settings.aws_access_key_id:
+        kwargs["aws_access_key_id"] = settings.aws_access_key_id
+        kwargs["aws_secret_access_key"] = settings.aws_secret_access_key
+    return boto3.client(service, **kwargs)
+
+
+sqs_client = _get_client("sqs")
 
 
 @with_retries(max_attempts=3, base_delay=1.0)

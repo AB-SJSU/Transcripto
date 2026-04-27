@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from app.models import UploadRequest, UploadResponse
 from app.services.s3 import generate_presigned_upload_url
-from app.services.dynamodb import create_job
+from app.services.dynamodb import create_job, get_job
 from app.services.sqs import publish_job_message
 from app.config import settings
 import uuid
@@ -38,11 +38,30 @@ async def confirm_upload(job_id: str, user_id: str, s3_key: str):
     """
     Step 2: Client calls this AFTER successfully uploading to S3.
     This triggers the SQS message so the worker picks up the job.
-    Kept separate so SQS is only triggered on confirmed uploads.
+    Idempotent — safe to call multiple times. Only publishes to SQS if job is PENDING or FAILED.
     """
+    job = get_job(job_id)
+    if not job:
+        raise HTTPException(status_code=404, detail=f"Job {job_id} not found")
+
+    current_status = job.get("status")
+
+    if current_status in ("PROCESSING", "SUCCESS"):
+        return {
+            "job_id": job_id,
+            "queued": False,
+            "reason": f"Job already in status {current_status} — not re-queued",
+        }
+
+    # PENDING or FAILED — publish to SQS
     try:
         message_id = publish_job_message(job_id, user_id, s3_key)
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to queue job: {str(e)}")
 
-    return {"job_id": job_id, "queued": True, "sqs_message_id": message_id}
+    return {
+        "job_id": job_id,
+        "queued": True,
+        "sqs_message_id": message_id,
+        "previous_status": current_status,
+    }

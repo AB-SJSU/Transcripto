@@ -13,3 +13,21 @@ __pycache__/
 *.pyc
 *.pyo
 .DS_Store
+
+#ssl certs
+*.pem
+*.key
+cert.pem
+key.pem
+
+#test fixtures
+transcripto-api/tests/fixtures/*.mp3
+transcripto-api/tests/fixtures/*.wav
+
+#pytest
+.pytest_cache/
+
+
+aakruti-day-one.md
+aakruti-day-two.md
+aakruti-day-three.md
