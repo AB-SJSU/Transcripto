@@ -27,6 +27,12 @@ Transcripto is a cloud-native backend that accepts audio file uploads and return
 ## Project Structure
 
 ```text
+transcripto-web/       # Static SPA for upload + status (deploy to S3 website); see transcripto-web/README.md
+├── index.html
+├── app.js
+├── styles.css
+└── README.md
+
 transcripto-api/
 ├── app/
 │   ├── main.py          # FastAPI entry point
@@ -457,6 +463,3 @@ Worker sends:
 * Auto-scaling workers
 
 ---
-
-
-ML Worker Lead — Transcripto
