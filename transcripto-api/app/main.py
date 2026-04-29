@@ -3,7 +3,7 @@ from fastapi.responses import RedirectResponse
 from starlette.middleware.cors import CORSMiddleware
 
 from app.config import settings
-from app.routes import upload, status
+from app.routes import upload, status, auth
 
 app = FastAPI(
     title="Transcripto API",
@@ -28,6 +28,7 @@ if settings.cors_origins_list:
         allow_headers=["*"],
     )
 
+app.include_router(auth.router)
 app.include_router(upload.router, tags=["jobs"])
 app.include_router(status.router, tags=["jobs"])
 

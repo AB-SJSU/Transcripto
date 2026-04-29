@@ -19,6 +19,13 @@ class Settings(BaseSettings):
     # Comma-separated list; empty means no browser origins allowed (add your S3 website URL later).
     cors_allow_origins: str = ""
 
+    # Auth service
+    auth_service_url: str = ""
+    auth_internal_api_key: str = ""
+
+    # Supabase JWT validation
+    supabase_jwks_url: str = ""
+
     class Config:
         env_file = ".env"
 
