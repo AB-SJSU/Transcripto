@@ -57,6 +57,7 @@
     var box = document.getElementById("transcript-url-box");
     var field = document.getElementById("transcript-url-field");
     var link = document.getElementById("transcript-open-link");
+    var copyBtn = document.getElementById("transcript-copy-btn");
     if (transcriptUrl) {
       field.value = transcriptUrl;
       link.href = transcriptUrl;
@@ -65,6 +66,7 @@
     } else {
       field.value = "";
       link.removeAttribute("href");
+      copyBtn.textContent = "Copy";
       box.classList.add("hidden");
       box.setAttribute("aria-hidden", "true");
     }
@@ -99,7 +101,18 @@
     }
   }
 
-  function pollStatus(base, jobId) {
+  function fetchTranscriptUrl(base, jobId, userId) {
+    var url =
+      base +
+      "/transcript/" +
+      encodeURIComponent(jobId) +
+      "?user_id=" +
+      encodeURIComponent(userId);
+
+    return fetchJson(url, { method: "GET" });
+  }
+
+  function pollStatus(base, jobId, userId) {
     stopPolling();
     var intervalMs = 5000;
 
@@ -117,14 +130,27 @@
 
           if (status === "SUCCESS") {
             stopPolling();
-            var url = data.transcript_url || data.transcriptUrl;
-            updateStatus(
-              "Success",
-              "Your transcript is ready.",
-              jobId,
-              url || undefined
-            );
-            setSubmitting(false);
+            updateStatus("Success", "Fetching transcript link...", jobId, null);
+            fetchTranscriptUrl(base, jobId, userId)
+              .then(function (transcriptData) {
+                updateStatus(
+                  "Success",
+                  "Your transcript is ready.",
+                  jobId,
+                  transcriptData.transcript_url
+                );
+                setSubmitting(false);
+              })
+              .catch(function (err) {
+                updateStatus(
+                  "Success",
+                  "Transcript completed, but the download URL could not be loaded: " +
+                    (err.message || String(err)),
+                  jobId,
+                  null
+                );
+                setSubmitting(false);
+              });
           } else if (status === "FAILED") {
             stopPolling();
             var err = data.error_message || data.errorMessage || "Unknown error";
@@ -241,7 +267,7 @@
 
           return fetchJson(confirmUrl, { method: "POST" }).then(function () {
             updateStatus("Queued", "Polling for completion…", jobId, null);
-            pollStatus(base, jobId);
+            pollStatus(base, jobId, userId);
           });
         });
       })

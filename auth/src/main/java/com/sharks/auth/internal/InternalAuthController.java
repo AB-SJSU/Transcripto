@@ -1,4 +1,4 @@
-package com.sharks.auth.web;
+package com.sharks.auth.internal;
 
 import java.util.Map;
 
@@ -12,16 +12,17 @@ import org.springframework.web.client.RestClientResponseException;
 
 import com.sharks.auth.service.AuthService;
 import com.sharks.auth.web.dto.LoginRequest;
+import com.sharks.auth.web.dto.SignupRequest;
 
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("/api/v1/auth")
-public class AuthController {
+@RequestMapping("/internal/auth")
+public class InternalAuthController {
 
 	private final AuthService authService;
 
-	public AuthController(AuthService authService) {
+	public InternalAuthController(AuthService authService) {
 		this.authService = authService;
 	}
 
@@ -31,6 +32,24 @@ public class AuthController {
 			Map<String, Object> tokenResponse = authService.login(body.getEmail(), body.getPassword());
 			return ResponseEntity.ok(tokenResponse);
 		} catch (RestClientResponseException e) {
+			return ResponseEntity.status(e.getStatusCode()).body(e.getResponseBodyAsString());
+		} catch (IllegalStateException e) {
+			return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).body(Map.of("error", e.getMessage()));
+		} catch (IllegalArgumentException e) {
+			return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
+		}
+	}
+
+	@PostMapping("/signup")
+	public ResponseEntity<?> signup(@Valid @RequestBody SignupRequest body) {
+		try {
+			Map<String, Object> responseBody = authService.signup(body.getEmail(), body.getPassword());
+			return ResponseEntity.status(HttpStatus.CREATED).body(responseBody);
+		} catch (RestClientResponseException e) {
+			int code = e.getStatusCode().value();
+			if (code == 422 || code == 409) {
+				return ResponseEntity.status(HttpStatus.CONFLICT).body(e.getResponseBodyAsString());
+			}
 			return ResponseEntity.status(e.getStatusCode()).body(e.getResponseBodyAsString());
 		} catch (IllegalStateException e) {
 			return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).body(Map.of("error", e.getMessage()));
