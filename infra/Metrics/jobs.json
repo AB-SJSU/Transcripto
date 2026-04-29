@@ -1,0 +1,3541 @@
+{
+    "Items": [
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:14:46.300611+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:14:21.362808+00:00"
+            },
+            "jobId": {
+                "S": "e09c53b0-faa1-493e-b427-e11a14f4137b"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/e09c53b0-faa1-493e-b427-e11a14f4137b.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/e09c53b0-faa1-493e-b427-e11a14f4137b/test_18.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:54:24.480677+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:48:15.831997+00:00"
+            },
+            "jobId": {
+                "S": "2bcc1f2f-dec0-4505-929b-062ab8ae6dec"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/2bcc1f2f-dec0-4505-929b-062ab8ae6dec.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/2bcc1f2f-dec0-4505-929b-062ab8ae6dec/test2file_29.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:45:50.988644+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:56.915789+00:00"
+            },
+            "jobId": {
+                "S": "2d45a283-ccf8-4533-a0ad-493deff13ca3"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/2d45a283-ccf8-4533-a0ad-493deff13ca3.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/2d45a283-ccf8-4533-a0ad-493deff13ca3/testfile_27.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:45:25.921439+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:29.513073+00:00"
+            },
+            "jobId": {
+                "S": "20f8f305-6d5d-4c2b-a0e9-3d2876ce96d2"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/20f8f305-6d5d-4c2b-a0e9-3d2876ce96d2.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/20f8f305-6d5d-4c2b-a0e9-3d2876ce96d2/testfile_11.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:54:19.422177+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:48:11.942418+00:00"
+            },
+            "jobId": {
+                "S": "0b053012-ba73-4e69-8523-35a6b80e56c6"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/0b053012-ba73-4e69-8523-35a6b80e56c6.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/0b053012-ba73-4e69-8523-35a6b80e56c6/test2file_27.flac"
+            }
+        },
+        {
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "updatedAt": {
+                "S": "2026-04-29T06:19:31.075182+00:00"
+            },
+            "status": {
+                "S": "PENDING"
+            },
+            "jobId": {
+                "S": "e30237bb-2ca8-472e-972f-b04b904cc090"
+            },
+            "createdAt": {
+                "S": "2026-04-29T06:19:31.075182+00:00"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "NULL": true
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/e30237bb-2ca8-472e-972f-b04b904cc090/test2file_02.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:52:59.279034+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:42.462494+00:00"
+            },
+            "jobId": {
+                "S": "7c77a69e-f9fa-4bfd-8662-b0983fb7653e"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/7c77a69e-f9fa-4bfd-8662-b0983fb7653e.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/7c77a69e-f9fa-4bfd-8662-b0983fb7653e/test2file_11.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:14:38.461732+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:14:08.460834+00:00"
+            },
+            "jobId": {
+                "S": "5b4977dd-559a-413a-8566-aa54441008df"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/5b4977dd-559a-413a-8566-aa54441008df.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/5b4977dd-559a-413a-8566-aa54441008df/test_11.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T01:52:50.740781+00:00"
+            },
+            "userId": {
+                "S": "demo"
+            },
+            "status": {
+                "S": "FAILED"
+            },
+            "createdAt": {
+                "S": "2026-04-29T00:43:05.640096+00:00"
+            },
+            "jobId": {
+                "S": "4aa6ff17-c614-4a52-af02-2febc3ff9138"
+            },
+            "errorMessage": {
+                "S": "An error occurred (404) when calling the HeadObject operation: Not Found"
+            },
+            "outputS3Path": {
+                "NULL": true
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/demo/4aa6ff17-c614-4a52-af02-2febc3ff9138/sample.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:14:26.460812+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:13:52.849326+00:00"
+            },
+            "jobId": {
+                "S": "f375d3cc-415d-4093-bdcd-91725bfe7471"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/f375d3cc-415d-4093-bdcd-91725bfe7471.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/f375d3cc-415d-4093-bdcd-91725bfe7471/test_02.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:45:55.978801+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:34.961220+00:00"
+            },
+            "jobId": {
+                "S": "c8cc18c7-45ba-492f-bf6b-2ebe64688396"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/c8cc18c7-45ba-492f-bf6b-2ebe64688396.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/c8cc18c7-45ba-492f-bf6b-2ebe64688396/testfile_14.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:52:25.222046+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:52.141186+00:00"
+            },
+            "jobId": {
+                "S": "869466c0-e6c4-4696-8872-df8982c01984"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/869466c0-e6c4-4696-8872-df8982c01984.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/869466c0-e6c4-4696-8872-df8982c01984/test2file_16.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:44:44.272413+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:32.903013+00:00"
+            },
+            "jobId": {
+                "S": "5cbbd104-07df-40f5-bb6c-a3c7273a07d8"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/5cbbd104-07df-40f5-bb6c-a3c7273a07d8.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/5cbbd104-07df-40f5-bb6c-a3c7273a07d8/testfile_13.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:46:01.275595+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:46.020761+00:00"
+            },
+            "jobId": {
+                "S": "56bb28b9-4f0a-4fc1-8999-46c21891627b"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/56bb28b9-4f0a-4fc1-8999-46c21891627b.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/56bb28b9-4f0a-4fc1-8999-46c21891627b/testfile_21.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:51:40.236382+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:38.713376+00:00"
+            },
+            "jobId": {
+                "S": "678b2f2a-d370-4dfd-83d2-bd1ea2b05165"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/678b2f2a-d370-4dfd-83d2-bd1ea2b05165.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/678b2f2a-d370-4dfd-83d2-bd1ea2b05165/test2file_09.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:44:54.437944+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:14.444563+00:00"
+            },
+            "jobId": {
+                "S": "d99a4972-c572-416e-87b8-652b6f4d6d33"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/d99a4972-c572-416e-87b8-652b6f4d6d33.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/d99a4972-c572-416e-87b8-652b6f4d6d33/testfile_02.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:14:51.297999+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:14:25.256937+00:00"
+            },
+            "jobId": {
+                "S": "5e1a2048-a952-4467-adfb-915a735c8640"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/5e1a2048-a952-4467-adfb-915a735c8640.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/5e1a2048-a952-4467-adfb-915a735c8640/test_20.flac"
+            }
+        },
+        {
+            "userId": {
+                "S": "demo"
+            },
+            "updatedAt": {
+                "S": "2026-04-29T02:34:16.716029+00:00"
+            },
+            "status": {
+                "S": "PENDING"
+            },
+            "jobId": {
+                "S": "c61551ef-83a4-4295-b771-eb2277fe7ea7"
+            },
+            "createdAt": {
+                "S": "2026-04-29T02:34:16.716029+00:00"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "NULL": true
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/demo/c61551ef-83a4-4295-b771-eb2277fe7ea7/sample.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:14:56.192805+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:14:13.854741+00:00"
+            },
+            "jobId": {
+                "S": "afab5caa-c7a9-42bc-9534-3da38cccf32c"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/afab5caa-c7a9-42bc-9534-3da38cccf32c.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/afab5caa-c7a9-42bc-9534-3da38cccf32c/test_14.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T00:08:35.992233+00:00"
+            },
+            "userId": {
+                "S": "e2e-test-user"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-28T23:54:59.855865+00:00"
+            },
+            "jobId": {
+                "S": "2efaf5d7-4c82-4e3b-bcff-e829e6b4bac2"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/e2e-test-user/2efaf5d7-4c82-4e3b-bcff-e829e6b4bac2.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/e2e-test-user/2efaf5d7-4c82-4e3b-bcff-e829e6b4bac2/test_success.mp3"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T01:45:40.958861+00:00"
+            },
+            "userId": {
+                "S": "makhijaniankush@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T01:45:36.265363+00:00"
+            },
+            "jobId": {
+                "S": "c42ed18b-2c82-4f32-89d1-d4dfd3881cda"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/makhijaniankush@gmail.com/c42ed18b-2c82-4f32-89d1-d4dfd3881cda.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/makhijaniankush@gmail.com/c42ed18b-2c82-4f32-89d1-d4dfd3881cda/Armstrong_Small_Step.ogg.mp3"
+            }
+        },
+        {
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "updatedAt": {
+                "S": "2026-04-29T03:58:13.537302+00:00"
+            },
+            "status": {
+                "S": "PENDING"
+            },
+            "jobId": {
+                "S": "43459865-7914-488a-916a-902b38659ddf"
+            },
+            "createdAt": {
+                "S": "2026-04-29T03:58:13.537302+00:00"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "NULL": true
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/43459865-7914-488a-916a-902b38659ddf/test_1.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T00:06:30.698893+00:00"
+            },
+            "userId": {
+                "S": "e2e-test-user"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-28T23:59:46.372690+00:00"
+            },
+            "jobId": {
+                "S": "75df0876-ff7b-4533-9711-eabb72996761"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/e2e-test-user/75df0876-ff7b-4533-9711-eabb72996761.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/e2e-test-user/75df0876-ff7b-4533-9711-eabb72996761/test_processing.mp3"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:51:45.162308+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "FAILED"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:05.653962+00:00"
+            },
+            "jobId": {
+                "S": "d6fa5401-4b72-471d-abc5-e675b3b0579d"
+            },
+            "errorMessage": {
+                "S": "An error occurred (404) when calling the HeadObject operation: Not Found"
+            },
+            "outputS3Path": {
+                "NULL": true
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/d6fa5401-4b72-471d-abc5-e675b3b0579d/test2file_06.flac"
+            }
+        },
+        {
+            "userId": {
+                "S": "demo"
+            },
+            "updatedAt": {
+                "S": "2026-04-29T02:33:02.784294+00:00"
+            },
+            "status": {
+                "S": "PENDING"
+            },
+            "jobId": {
+                "S": "bafc4048-8d07-4ed4-9db7-ca013f734dd5"
+            },
+            "createdAt": {
+                "S": "2026-04-29T02:33:02.784294+00:00"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "NULL": true
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/demo/bafc4048-8d07-4ed4-9db7-ca013f734dd5/sample1.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T00:10:23.252392+00:00"
+            },
+            "userId": {
+                "S": "e2e-test-user"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-28T23:59:58.187142+00:00"
+            },
+            "jobId": {
+                "S": "3a4038f8-32a4-42ae-9157-3e20801e9679"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/e2e-test-user/3a4038f8-32a4-42ae-9157-3e20801e9679.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/e2e-test-user/3a4038f8-32a4-42ae-9157-3e20801e9679/test_success.mp3"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:53:19.620085+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:46.326673+00:00"
+            },
+            "jobId": {
+                "S": "8ca201bc-4000-4281-9397-fd27c7e217f8"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/8ca201bc-4000-4281-9397-fd27c7e217f8.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/8ca201bc-4000-4281-9397-fd27c7e217f8/test2file_13.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:14:53.402581+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:14:02.874559+00:00"
+            },
+            "jobId": {
+                "S": "97e8bfc0-69ee-400e-98c9-4b1d0d89d30c"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/97e8bfc0-69ee-400e-98c9-4b1d0d89d30c.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/97e8bfc0-69ee-400e-98c9-4b1d0d89d30c/test_08.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:54:14.471117+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:48:08.478822+00:00"
+            },
+            "jobId": {
+                "S": "a2474f7c-fb3f-43ac-9d45-ffa508a5d2b2"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/a2474f7c-fb3f-43ac-9d45-ffa508a5d2b2.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/a2474f7c-fb3f-43ac-9d45-ffa508a5d2b2/test2file_25.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:45:16.029128+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:39.603253+00:00"
+            },
+            "jobId": {
+                "S": "33f4dfcb-1112-43e4-895b-97c9bbbeafae"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/33f4dfcb-1112-43e4-895b-97c9bbbeafae.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/33f4dfcb-1112-43e4-895b-97c9bbbeafae/testfile_17.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:52:20.121432+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:33.267840+00:00"
+            },
+            "jobId": {
+                "S": "661fe24a-29a6-4674-a5fb-620201687268"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/661fe24a-29a6-4674-a5fb-620201687268.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/661fe24a-29a6-4674-a5fb-620201687268/test2file_06.flac"
+            }
+        },
+        {
+            "userId": {
+                "S": "e2e-test-user"
+            },
+            "updatedAt": {
+                "S": "2026-04-28T23:59:46.019328+00:00"
+            },
+            "status": {
+                "S": "PENDING"
+            },
+            "jobId": {
+                "S": "cc53f207-2341-4936-b076-1e539d370622"
+            },
+            "createdAt": {
+                "S": "2026-04-28T23:59:46.019328+00:00"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "NULL": true
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/e2e-test-user/cc53f207-2341-4936-b076-1e539d370622/test_pending.mp3"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:51:54.875310+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:38.099066+00:00"
+            },
+            "jobId": {
+                "S": "2cc94d1e-3dc4-458b-a58e-0c91b633627a"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/2cc94d1e-3dc4-458b-a58e-0c91b633627a.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/2cc94d1e-3dc4-458b-a58e-0c91b633627a/testfile_16.flac"
+            }
+        },
+        {
+            "userId": {
+                "S": "demo"
+            },
+            "updatedAt": {
+                "S": "2026-04-29T00:35:34.184003+00:00"
+            },
+            "status": {
+                "S": "PENDING"
+            },
+            "jobId": {
+                "S": "3d9d9e38-e88a-485a-8070-bb585be45715"
+            },
+            "createdAt": {
+                "S": "2026-04-29T00:35:34.184003+00:00"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "NULL": true
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/demo/3d9d9e38-e88a-485a-8070-bb585be45715/sample.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:14:41.342782+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:14:06.883244+00:00"
+            },
+            "jobId": {
+                "S": "2e6d659d-22ea-4dbe-a2ca-545fbf2a8f9c"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/2e6d659d-22ea-4dbe-a2ca-545fbf2a8f9c.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/2e6d659d-22ea-4dbe-a2ca-545fbf2a8f9c/test_10.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T04:35:42.026119+00:00"
+            },
+            "userId": {
+                "S": "softengineer2407@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T04:35:37.165711+00:00"
+            },
+            "jobId": {
+                "S": "35bbba2e-0e47-41c7-a17f-2c8c37038f8a"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/softengineer2407@gmail.com/35bbba2e-0e47-41c7-a17f-2c8c37038f8a.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/softengineer2407@gmail.com/35bbba2e-0e47-41c7-a17f-2c8c37038f8a/Armstrong_Small_Step.ogg.mp3"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:52:39.880157+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:52.993779+00:00"
+            },
+            "jobId": {
+                "S": "6236b244-b3bc-4adf-b9dd-81a19d360d24"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/6236b244-b3bc-4adf-b9dd-81a19d360d24.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/6236b244-b3bc-4adf-b9dd-81a19d360d24/testfile_25.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T04:40:28.063552+00:00"
+            },
+            "userId": {
+                "S": "softengineer2407@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T04:40:22.010401+00:00"
+            },
+            "jobId": {
+                "S": "98199b88-9c4c-49f6-8978-eb3ef73ecb73"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/softengineer2407@gmail.com/98199b88-9c4c-49f6-8978-eb3ef73ecb73.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/softengineer2407@gmail.com/98199b88-9c4c-49f6-8978-eb3ef73ecb73/Armstrong_Small_Step.ogg.mp3"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:51:25.634158+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:45:02.745914+00:00"
+            },
+            "jobId": {
+                "S": "f479ea30-d7d1-4d29-a12b-d7983ab1fff5"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/f479ea30-d7d1-4d29-a12b-d7983ab1fff5.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/f479ea30-d7d1-4d29-a12b-d7983ab1fff5/testfile_30.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T04:41:22.415581+00:00"
+            },
+            "userId": {
+                "S": "softengineer2407@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T04:41:17.735599+00:00"
+            },
+            "jobId": {
+                "S": "d18396a6-e6f2-40b5-a6b7-c3b8e288d5e8"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/softengineer2407@gmail.com/d18396a6-e6f2-40b5-a6b7-c3b8e288d5e8.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/softengineer2407@gmail.com/d18396a6-e6f2-40b5-a6b7-c3b8e288d5e8/Armstrong_Small_Step.ogg.mp3"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:44:49.227796+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:22.511518+00:00"
+            },
+            "jobId": {
+                "S": "0e4efb93-c107-4ba2-906f-0a6f1f49384f"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/0e4efb93-c107-4ba2-906f-0a6f1f49384f.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/0e4efb93-c107-4ba2-906f-0a6f1f49384f/testfile_07.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:53:04.761092+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:26.149847+00:00"
+            },
+            "jobId": {
+                "S": "3020636c-995b-470e-a771-861258656fba"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/3020636c-995b-470e-a771-861258656fba.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/3020636c-995b-470e-a771-861258656fba/test2file_02.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:14:31.395871+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:14:15.888792+00:00"
+            },
+            "jobId": {
+                "S": "3740b394-1902-4321-9530-46564e47e1dd"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/3740b394-1902-4321-9530-46564e47e1dd.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/3740b394-1902-4321-9530-46564e47e1dd/test_15.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:54:04.607928+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:48:06.570600+00:00"
+            },
+            "jobId": {
+                "S": "3ef2ffec-4e15-41b0-b299-a4ce9b3394da"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/3ef2ffec-4e15-41b0-b299-a4ce9b3394da.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/3ef2ffec-4e15-41b0-b299-a4ce9b3394da/test2file_24.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T04:51:21.455690+00:00"
+            },
+            "userId": {
+                "S": "softengineer2407@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T04:51:16.384313+00:00"
+            },
+            "jobId": {
+                "S": "043f66a2-935a-4e60-8c6a-2667349faca6"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/softengineer2407@gmail.com/043f66a2-935a-4e60-8c6a-2667349faca6.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/softengineer2407@gmail.com/043f66a2-935a-4e60-8c6a-2667349faca6/Armstrong_Small_Step.ogg.mp3"
+            }
+        },
+        {
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "updatedAt": {
+                "S": "2026-04-29T05:47:06.523987+00:00"
+            },
+            "status": {
+                "S": "PENDING"
+            },
+            "jobId": {
+                "S": "0d840734-6fcc-42f0-b68f-9a573cac551c"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:06.523987+00:00"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "NULL": true
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/0d840734-6fcc-42f0-b68f-9a573cac551c/test2file_07.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:44:59.421225+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:42.868499+00:00"
+            },
+            "jobId": {
+                "S": "59fa179f-aa79-445e-b2ce-6566cffd5862"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/59fa179f-aa79-445e-b2ce-6566cffd5862.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/59fa179f-aa79-445e-b2ce-6566cffd5862/testfile_19.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:53:39.152414+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "FAILED"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:05.041956+00:00"
+            },
+            "jobId": {
+                "S": "0bd1b699-ccc8-4332-a022-89704a6c8423"
+            },
+            "errorMessage": {
+                "S": "An error occurred (404) when calling the HeadObject operation: Not Found"
+            },
+            "outputS3Path": {
+                "NULL": true
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/0bd1b699-ccc8-4332-a022-89704a6c8423/test2file_05.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:44:29.477419+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:19.226994+00:00"
+            },
+            "jobId": {
+                "S": "650f2a94-b8dc-4599-8fc0-f5a3a9d9668b"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/650f2a94-b8dc-4599-8fc0-f5a3a9d9668b.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/650f2a94-b8dc-4599-8fc0-f5a3a9d9668b/testfile_05.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:51:30.540730+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:31.323969+00:00"
+            },
+            "jobId": {
+                "S": "3b26cd39-41c9-46ec-86af-1e1b18df8278"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/3b26cd39-41c9-46ec-86af-1e1b18df8278.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/3b26cd39-41c9-46ec-86af-1e1b18df8278/test2file_05.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:45:11.025805+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:36.467225+00:00"
+            },
+            "jobId": {
+                "S": "4f91c072-3276-417d-aa05-1d4e7ce6ea33"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/4f91c072-3276-417d-aa05-1d4e7ce6ea33.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/4f91c072-3276-417d-aa05-1d4e7ce6ea33/testfile_15.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:52:49.623956+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:40.592740+00:00"
+            },
+            "jobId": {
+                "S": "7d7e4a36-7243-430a-a7ae-cd00b650af1a"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/7d7e4a36-7243-430a-a7ae-cd00b650af1a.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/7d7e4a36-7243-430a-a7ae-cd00b650af1a/test2file_10.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:54:09.551948+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:48:02.839870+00:00"
+            },
+            "jobId": {
+                "S": "b4876d74-fa05-4788-a84b-914ab37946fc"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/b4876d74-fa05-4788-a84b-914ab37946fc.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/b4876d74-fa05-4788-a84b-914ab37946fc/test2file_22.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:08:08.451905+00:00"
+            },
+            "userId": {
+                "S": "softengineer2407@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:08:02.142868+00:00"
+            },
+            "jobId": {
+                "S": "9a145f10-7644-4608-b93c-31ffffd8cf0a"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/softengineer2407@gmail.com/9a145f10-7644-4608-b93c-31ffffd8cf0a.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/softengineer2407@gmail.com/9a145f10-7644-4608-b93c-31ffffd8cf0a/Armstrong_Small_Step.ogg.mp3"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:45:35.949549+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:20.815097+00:00"
+            },
+            "jobId": {
+                "S": "16b6b436-483f-40d1-b798-17a4bd911ecc"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/16b6b436-483f-40d1-b798-17a4bd911ecc.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/16b6b436-483f-40d1-b798-17a4bd911ecc/testfile_06.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:45:45.955545+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:26.039001+00:00"
+            },
+            "jobId": {
+                "S": "ac3c55c0-6440-4c8e-aa12-73e6cf9acdb5"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/ac3c55c0-6440-4c8e-aa12-73e6cf9acdb5.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/ac3c55c0-6440-4c8e-aa12-73e6cf9acdb5/testfile_09.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:14:23.766242+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:13:59.732570+00:00"
+            },
+            "jobId": {
+                "S": "9f968f56-8e55-4d4a-b490-af451f361706"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/9f968f56-8e55-4d4a-b490-af451f361706.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/9f968f56-8e55-4d4a-b490-af451f361706/test_06.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T04:09:39.447058+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T04:09:29.880427+00:00"
+            },
+            "jobId": {
+                "S": "024930e2-a6f5-4740-88cd-28a86e4e6504"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/024930e2-a6f5-4740-88cd-28a86e4e6504.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/024930e2-a6f5-4740-88cd-28a86e4e6504/test_2.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T03:09:56.373030+00:00"
+            },
+            "userId": {
+                "S": "makhijaniankush@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T03:09:24.400519+00:00"
+            },
+            "jobId": {
+                "S": "84f7ab9f-41d4-491d-bd0f-49f61525bfde"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/makhijaniankush@gmail.com/84f7ab9f-41d4-491d-bd0f-49f61525bfde.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/makhijaniankush@gmail.com/84f7ab9f-41d4-491d-bd0f-49f61525bfde/Armstrong_Small_Step.ogg.mp3"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:53:14.536821+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:59.479165+00:00"
+            },
+            "jobId": {
+                "S": "b446aae3-0cb2-49f6-946f-d05b4e16edad"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/b446aae3-0cb2-49f6-946f-d05b4e16edad.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/b446aae3-0cb2-49f6-946f-d05b4e16edad/test2file_20.flac"
+            }
+        },
+        {
+            "userId": {
+                "S": "e2e-test-user"
+            },
+            "updatedAt": {
+                "S": "2026-04-28T23:58:10.473769+00:00"
+            },
+            "status": {
+                "S": "PENDING"
+            },
+            "jobId": {
+                "S": "fb316e35-20c2-4060-85e9-8f7c1030fc63"
+            },
+            "createdAt": {
+                "S": "2026-04-28T23:58:10.473769+00:00"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "NULL": true
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/e2e-test-user/fb316e35-20c2-4060-85e9-8f7c1030fc63/test_pending.mp3"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:53:29.388062+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:48:04.809828+00:00"
+            },
+            "jobId": {
+                "S": "2a85004d-58c7-4aa2-b3cc-4d3e4c9affd5"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/2a85004d-58c7-4aa2-b3cc-4d3e4c9affd5.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/2a85004d-58c7-4aa2-b3cc-4d3e4c9affd5/test2file_23.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:45:05.737570+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:24.084326+00:00"
+            },
+            "jobId": {
+                "S": "b8953f5a-48e4-4dd8-b384-e27216364f41"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/b8953f5a-48e4-4dd8-b384-e27216364f41.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/b8953f5a-48e4-4dd8-b384-e27216364f41/testfile_08.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:52:25.270199+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "FAILED"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:03.663803+00:00"
+            },
+            "jobId": {
+                "S": "e97c6158-1078-464b-a130-b290d71f51a9"
+            },
+            "errorMessage": {
+                "S": "An error occurred (404) when calling the HeadObject operation: Not Found"
+            },
+            "outputS3Path": {
+                "NULL": true
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/e97c6158-1078-464b-a130-b290d71f51a9/test2file_03.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:44:19.323534+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:12.497016+00:00"
+            },
+            "jobId": {
+                "S": "92819b69-054d-4124-9355-899a43919808"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/92819b69-054d-4124-9355-899a43919808.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/92819b69-054d-4124-9355-899a43919808/testfile_01.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:14:08.805912+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:13:54.388512+00:00"
+            },
+            "jobId": {
+                "S": "86cef2b9-3e65-4b44-898a-e804df4dd8b7"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/86cef2b9-3e65-4b44-898a-e804df4dd8b7.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/86cef2b9-3e65-4b44-898a-e804df4dd8b7/test_03.flac"
+            }
+        },
+        {
+            "userId": {
+                "S": "demo"
+            },
+            "updatedAt": {
+                "S": "2026-04-29T02:19:07.064066+00:00"
+            },
+            "status": {
+                "S": "PENDING"
+            },
+            "jobId": {
+                "S": "a4c654b0-20fb-4f90-aaa8-56f640852f08"
+            },
+            "createdAt": {
+                "S": "2026-04-29T02:19:07.064066+00:00"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "NULL": true
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/demo/a4c654b0-20fb-4f90-aaa8-56f640852f08/sample.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:52:10.367405+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:29.241828+00:00"
+            },
+            "jobId": {
+                "S": "fb5ff205-a3e5-44f3-b409-738a9edc2e5d"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/fb5ff205-a3e5-44f3-b409-738a9edc2e5d.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/fb5ff205-a3e5-44f3-b409-738a9edc2e5d/test2file_04.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:51:35.436023+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:27.665841+00:00"
+            },
+            "jobId": {
+                "S": "e59dfc2f-f81a-4538-a46f-acc773e9a121"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/e59dfc2f-f81a-4538-a46f-acc773e9a121.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/e59dfc2f-f81a-4538-a46f-acc773e9a121/test2file_03.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:53:34.235606+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:48.347347+00:00"
+            },
+            "jobId": {
+                "S": "cfd2b6ff-848c-4442-b541-b191242eaf47"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/cfd2b6ff-848c-4442-b541-b191242eaf47.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/cfd2b6ff-848c-4442-b541-b191242eaf47/test2file_14.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:53:48.928823+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:48:13.785395+00:00"
+            },
+            "jobId": {
+                "S": "0507a379-cbd2-43cd-8e88-937cf03109d4"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/0507a379-cbd2-43cd-8e88-937cf03109d4.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/0507a379-cbd2-43cd-8e88-937cf03109d4/test2file_28.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:44:34.389652+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:17.657067+00:00"
+            },
+            "jobId": {
+                "S": "a115f65f-4ce4-48dd-b203-bcc9a5edb98f"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/a115f65f-4ce4-48dd-b203-bcc9a5edb98f.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/a115f65f-4ce4-48dd-b203-bcc9a5edb98f/testfile_04.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T00:38:34.172959+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T00:38:28.124299+00:00"
+            },
+            "jobId": {
+                "S": "c5f8ad89-7730-4267-a0f2-53ea4e13f310"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/c5f8ad89-7730-4267-a0f2-53ea4e13f310.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/c5f8ad89-7730-4267-a0f2-53ea4e13f310/sample.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:52:15.237175+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:34.722502+00:00"
+            },
+            "jobId": {
+                "S": "c25e86c3-e605-4c69-83dd-a03547802553"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/c25e86c3-e605-4c69-83dd-a03547802553.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/c25e86c3-e605-4c69-83dd-a03547802553/test2file_07.flac"
+            }
+        },
+        {
+            "userId": {
+                "S": "demo"
+            },
+            "updatedAt": {
+                "S": "2026-04-29T00:33:43.217457+00:00"
+            },
+            "status": {
+                "S": "PENDING"
+            },
+            "jobId": {
+                "S": "dc8f8896-b645-4f64-830b-f3327aeb8f81"
+            },
+            "createdAt": {
+                "S": "2026-04-29T00:33:43.217457+00:00"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "NULL": true
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/demo/dc8f8896-b645-4f64-830b-f3327aeb8f81/sample.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T00:20:04.356670+00:00"
+            },
+            "userId": {
+                "S": "makhijaniankush@gmail.cp,"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T00:19:58.705858+00:00"
+            },
+            "jobId": {
+                "S": "bf063042-0766-4472-a437-d00708b7a14a"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/makhijaniankush@gmail.cp,/bf063042-0766-4472-a437-d00708b7a14a.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/makhijaniankush@gmail.cp,/bf063042-0766-4472-a437-d00708b7a14a/Armstrong_Small_Step.ogg.mp3"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:52:05.433928+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:24.519888+00:00"
+            },
+            "jobId": {
+                "S": "c70e1f6f-2e07-48b9-97cb-29a88e728f12"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/c70e1f6f-2e07-48b9-97cb-29a88e728f12.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/c70e1f6f-2e07-48b9-97cb-29a88e728f12/test2file_01.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:52:44.758516+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:45:00.708721+00:00"
+            },
+            "jobId": {
+                "S": "4f0e0aad-bfaa-4a66-b762-15ba4dfc106e"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/4f0e0aad-bfaa-4a66-b762-15ba4dfc106e.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/4f0e0aad-bfaa-4a66-b762-15ba4dfc106e/testfile_29.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:51:20.683144+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:47.747673+00:00"
+            },
+            "jobId": {
+                "S": "55817593-02ee-456b-8305-7e90768943e1"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/55817593-02ee-456b-8305-7e90768943e1.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/55817593-02ee-456b-8305-7e90768943e1/testfile_22.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:45:30.940403+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:59.079790+00:00"
+            },
+            "jobId": {
+                "S": "8909dc82-a45d-4bf0-9ecc-9e210ca3b83b"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/8909dc82-a45d-4bf0-9ecc-9e210ca3b83b.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/8909dc82-a45d-4bf0-9ecc-9e210ca3b83b/testfile_28.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T06:28:14.929309+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T06:19:28.781154+00:00"
+            },
+            "jobId": {
+                "S": "eae611e2-02ad-4d15-997f-861925a241ad"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/eae611e2-02ad-4d15-997f-861925a241ad.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/eae611e2-02ad-4d15-997f-861925a241ad/test2file_01.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T04:27:25.232576+00:00"
+            },
+            "userId": {
+                "S": "makhijaniankush@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T04:27:20.333085+00:00"
+            },
+            "jobId": {
+                "S": "8cfd9095-0d70-43b3-abe7-8c038ece824c"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/makhijaniankush@gmail.com/8cfd9095-0d70-43b3-abe7-8c038ece824c.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/makhijaniankush@gmail.com/8cfd9095-0d70-43b3-abe7-8c038ece824c/Armstrong_Small_Step.ogg.mp3"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:53:24.549154+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:36.366975+00:00"
+            },
+            "jobId": {
+                "S": "50e5cb75-6fa8-473a-a29f-9505bdb2946c"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/50e5cb75-6fa8-473a-a29f-9505bdb2946c.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/50e5cb75-6fa8-473a-a29f-9505bdb2946c/test2file_08.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:14:48.391619+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:14:17.388616+00:00"
+            },
+            "jobId": {
+                "S": "099c03d9-b275-4609-814b-4e13016a98c1"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/099c03d9-b275-4609-814b-4e13016a98c1.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/099c03d9-b275-4609-814b-4e13016a98c1/test_16.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:53:39.099857+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:54.674862+00:00"
+            },
+            "jobId": {
+                "S": "b5d416ba-c9ea-4b61-882b-38bd9fb4ffa2"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/b5d416ba-c9ea-4b61-882b-38bd9fb4ffa2.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/b5d416ba-c9ea-4b61-882b-38bd9fb4ffa2/testfile_26.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:14:28.665925+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:14:12.044518+00:00"
+            },
+            "jobId": {
+                "S": "5f721865-8d6c-4831-a047-f546c8564a16"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/5f721865-8d6c-4831-a047-f546c8564a16.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/5f721865-8d6c-4831-a047-f546c8564a16/test_13.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T02:45:28.522971+00:00"
+            },
+            "userId": {
+                "S": "demo"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T02:35:59.558160+00:00"
+            },
+            "jobId": {
+                "S": "a008b6da-e943-415c-bece-d4517a294e00"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/demo/a008b6da-e943-415c-bece-d4517a294e00.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/demo/a008b6da-e943-415c-bece-d4517a294e00/sample.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:44:24.278084+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:16.079379+00:00"
+            },
+            "jobId": {
+                "S": "fb839f77-8459-4a7d-a752-a6e4b41db81e"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/fb839f77-8459-4a7d-a752-a6e4b41db81e.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/fb839f77-8459-4a7d-a752-a6e4b41db81e/testfile_03.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-28T23:59:23.081227+00:00"
+            },
+            "userId": {
+                "S": "e2e-test-user"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-28T23:54:47.830492+00:00"
+            },
+            "jobId": {
+                "S": "9828a182-2e82-480a-897b-945c53923ba2"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/e2e-test-user/9828a182-2e82-480a-897b-945c53923ba2.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/e2e-test-user/9828a182-2e82-480a-897b-945c53923ba2/test_processing.mp3"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:51:50.071795+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:27.775405+00:00"
+            },
+            "jobId": {
+                "S": "0f3795b0-881b-4172-8079-306ffecf1edc"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/0f3795b0-881b-4172-8079-306ffecf1edc.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/0f3795b0-881b-4172-8079-306ffecf1edc/testfile_10.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:45:40.938009+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:44.447084+00:00"
+            },
+            "jobId": {
+                "S": "2c6d4ffc-32d8-4721-81ae-1013c96954e7"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/2c6d4ffc-32d8-4721-81ae-1013c96954e7.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/2c6d4ffc-32d8-4721-81ae-1013c96954e7/testfile_20.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:53:44.043955+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:55.700475+00:00"
+            },
+            "jobId": {
+                "S": "ab987d95-65d4-4c5f-9e88-9c85c5252008"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/ab987d95-65d4-4c5f-9e88-9c85c5252008.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/ab987d95-65d4-4c5f-9e88-9c85c5252008/test2file_18.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T00:04:02.378958+00:00"
+            },
+            "userId": {
+                "S": "e2e-test-user"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-28T23:58:10.834056+00:00"
+            },
+            "jobId": {
+                "S": "5fae31ba-e758-4847-96b0-0579330d71d6"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/e2e-test-user/5fae31ba-e758-4847-96b0-0579330d71d6.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/e2e-test-user/5fae31ba-e758-4847-96b0-0579330d71d6/test_processing.mp3"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:52:54.479437+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:54.191037+00:00"
+            },
+            "jobId": {
+                "S": "10103d86-bfe9-4989-aa1f-8053c993de79"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/10103d86-bfe9-4989-aa1f-8053c993de79.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/10103d86-bfe9-4989-aa1f-8053c993de79/test2file_17.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:53:58.700408+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:44.449412+00:00"
+            },
+            "jobId": {
+                "S": "4acc6904-8004-4093-8f4c-0f36c3e525ad"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/4acc6904-8004-4093-8f4c-0f36c3e525ad.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/4acc6904-8004-4093-8f4c-0f36c3e525ad/test2file_12.flac"
+            }
+        },
+        {
+            "userId": {
+                "S": "e2e-test-user"
+            },
+            "updatedAt": {
+                "S": "2026-04-28T23:54:47.462539+00:00"
+            },
+            "status": {
+                "S": "PENDING"
+            },
+            "jobId": {
+                "S": "282564d1-0697-498f-8cf6-b9c519b31bb8"
+            },
+            "createdAt": {
+                "S": "2026-04-28T23:54:47.462539+00:00"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "NULL": true
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/e2e-test-user/282564d1-0697-498f-8cf6-b9c519b31bb8/test_pending.mp3"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:53:53.835687+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:48:17.388043+00:00"
+            },
+            "jobId": {
+                "S": "ca85c5ab-64d5-4fe2-9284-965c53498b9a"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/ca85c5ab-64d5-4fe2-9284-965c53498b9a.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/ca85c5ab-64d5-4fe2-9284-965c53498b9a/test2file_30.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:51:45.123744+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "FAILED"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:03.004140+00:00"
+            },
+            "jobId": {
+                "S": "e04274e0-8262-448c-a6bb-db10f2c8d5fb"
+            },
+            "errorMessage": {
+                "S": "An error occurred (404) when calling the HeadObject operation: Not Found"
+            },
+            "outputS3Path": {
+                "NULL": true
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/e04274e0-8262-448c-a6bb-db10f2c8d5fb/test2file_02.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-01T00:35:25.870172+00:00"
+            },
+            "userId": {
+                "S": "test-user-1"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-01T00:25:22.394010+00:00"
+            },
+            "jobId": {
+                "S": "9e01cfa0-bf19-44a9-8962-af9566dfdc2f"
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/transcripts/9e01cfa0-bf19-44a9-8962-af9566dfdc2f.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/test-user-1/9e01cfa0-bf19-44a9-8962-af9566dfdc2f/audio.mp3"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:45:20.984823+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:49.344337+00:00"
+            },
+            "jobId": {
+                "S": "e379d482-da4c-4ec4-a19f-a74750796c4f"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/e379d482-da4c-4ec4-a19f-a74750796c4f.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/e379d482-da4c-4ec4-a19f-a74750796c4f/testfile_23.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T04:09:34.637818+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T04:09:28.098709+00:00"
+            },
+            "jobId": {
+                "S": "2ba9fa75-056e-4fb6-a973-61f155025ff1"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/2ba9fa75-056e-4fb6-a973-61f155025ff1.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/2ba9fa75-056e-4fb6-a973-61f155025ff1/test_1.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:14:03.695591+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:13:55.950748+00:00"
+            },
+            "jobId": {
+                "S": "9ae0f74a-00df-41e0-9594-c7cd65b0996c"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/9ae0f74a-00df-41e0-9594-c7cd65b0996c.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/9ae0f74a-00df-41e0-9594-c7cd65b0996c/test_04.flac"
+            }
+        },
+        {
+            "userId": {
+                "S": "softengineer2407@gmail.com"
+            },
+            "updatedAt": {
+                "S": "2026-04-29T06:56:44.956627+00:00"
+            },
+            "status": {
+                "S": "PENDING"
+            },
+            "jobId": {
+                "S": "653036cc-be6d-4b4f-a284-917b72eea1bc"
+            },
+            "createdAt": {
+                "S": "2026-04-29T06:56:44.956627+00:00"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "NULL": true
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/softengineer2407@gmail.com/653036cc-be6d-4b4f-a284-917b72eea1bc/Armstrong_Small_Step.ogg.mp3"
+            }
+        },
+        {
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "updatedAt": {
+                "S": "2026-04-29T03:58:16.112587+00:00"
+            },
+            "status": {
+                "S": "PENDING"
+            },
+            "jobId": {
+                "S": "555c9455-32db-4790-88c5-8f30b4af85d2"
+            },
+            "createdAt": {
+                "S": "2026-04-29T03:58:16.112587+00:00"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "NULL": true
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/555c9455-32db-4790-88c5-8f30b4af85d2/test_2.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:14:13.738987+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:14:01.276391+00:00"
+            },
+            "jobId": {
+                "S": "4dd52775-f8d5-4314-9eab-ec237365f9f1"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/4dd52775-f8d5-4314-9eab-ec237365f9f1.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/4dd52775-f8d5-4314-9eab-ec237365f9f1/test_07.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:14:33.547348+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:14:23.274369+00:00"
+            },
+            "jobId": {
+                "S": "a2bbeb1c-3397-436b-b80c-fe1fc06e6302"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/a2bbeb1c-3397-436b-b80c-fe1fc06e6302.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/a2bbeb1c-3397-436b-b80c-fe1fc06e6302/test_19.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T01:55:22.622068+00:00"
+            },
+            "userId": {
+                "S": "makhijaniankush@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T01:55:17.923697+00:00"
+            },
+            "jobId": {
+                "S": "2cef0034-0553-41c6-8d72-e4fc126377ff"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/makhijaniankush@gmail.com/2cef0034-0553-41c6-8d72-e4fc126377ff.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/makhijaniankush@gmail.com/2cef0034-0553-41c6-8d72-e4fc126377ff/Armstrong_Small_Step.ogg.mp3"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:52:30.165783+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:48:09.923371+00:00"
+            },
+            "jobId": {
+                "S": "1f19e83a-ddf0-4f02-a787-ffba91406cb5"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/1f19e83a-ddf0-4f02-a787-ffba91406cb5.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/1f19e83a-ddf0-4f02-a787-ffba91406cb5/test2file_26.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:52:35.044165+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:50.995839+00:00"
+            },
+            "jobId": {
+                "S": "3da85d51-2f54-4101-9177-555d097acad2"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/3da85d51-2f54-4101-9177-555d097acad2.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/3da85d51-2f54-4101-9177-555d097acad2/testfile_24.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:52:49.667306+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "FAILED"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:04.384899+00:00"
+            },
+            "jobId": {
+                "S": "25dfdc79-c6d4-4488-b6b2-d855f5eb2025"
+            },
+            "errorMessage": {
+                "S": "An error occurred (404) when calling the HeadObject operation: Not Found"
+            },
+            "outputS3Path": {
+                "NULL": true
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/25dfdc79-c6d4-4488-b6b2-d855f5eb2025/test2file_04.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:13:57.787181+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:13:50.818645+00:00"
+            },
+            "jobId": {
+                "S": "4e91c45d-6778-4cd4-b149-e499c22e5dc3"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/4e91c45d-6778-4cd4-b149-e499c22e5dc3.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/4e91c45d-6778-4cd4-b149-e499c22e5dc3/test_01.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:51:45.079781+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:50.200888+00:00"
+            },
+            "jobId": {
+                "S": "415cc905-3a0a-4b57-af46-74e1bc99d3ee"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/415cc905-3a0a-4b57-af46-74e1bc99d3ee.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/415cc905-3a0a-4b57-af46-74e1bc99d3ee/test2file_15.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T04:27:48.316475+00:00"
+            },
+            "userId": {
+                "S": "softengineer2407@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T04:27:43.759041+00:00"
+            },
+            "jobId": {
+                "S": "dc3f2482-2797-455b-ac4c-badeff4dd35f"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/softengineer2407@gmail.com/dc3f2482-2797-455b-ac4c-badeff4dd35f.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/softengineer2407@gmail.com/dc3f2482-2797-455b-ac4c-badeff4dd35f/Armstrong_Small_Step.ogg.mp3"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:14:36.317738+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:13:57.976430+00:00"
+            },
+            "jobId": {
+                "S": "aed75496-1008-4aea-91a7-90ef01755b74"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/aed75496-1008-4aea-91a7-90ef01755b74.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/aed75496-1008-4aea-91a7-90ef01755b74/test_05.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:56:26.594732+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:41.265110+00:00"
+            },
+            "jobId": {
+                "S": "f36a354e-db10-4bea-9196-4ec571711f2c"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/f36a354e-db10-4bea-9196-4ec571711f2c.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/f36a354e-db10-4bea-9196-4ec571711f2c/testfile_18.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:14:18.676816+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:14:04.974653+00:00"
+            },
+            "jobId": {
+                "S": "11d93773-2e01-401f-8ee6-3e9026703b93"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/11d93773-2e01-401f-8ee6-3e9026703b93.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/11d93773-2e01-401f-8ee6-3e9026703b93/test_09.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:52:44.794631+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "FAILED"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:02.086576+00:00"
+            },
+            "jobId": {
+                "S": "207fd223-619c-4e03-9e35-c3602463585c"
+            },
+            "errorMessage": {
+                "S": "An error occurred (404) when calling the HeadObject operation: Not Found"
+            },
+            "outputS3Path": {
+                "NULL": true
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/207fd223-619c-4e03-9e35-c3602463585c/test2file_01.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:14:43.407961+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:14:10.420552+00:00"
+            },
+            "jobId": {
+                "S": "9df02225-f36b-470c-a449-2dcde05ff782"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/9df02225-f36b-470c-a449-2dcde05ff782.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/9df02225-f36b-470c-a449-2dcde05ff782/test_12.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:44:39.360467+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:44:31.027223+00:00"
+            },
+            "jobId": {
+                "S": "f8d8c841-c360-4e87-b9dc-3a5f0d774c37"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/f8d8c841-c360-4e87-b9dc-3a5f0d774c37.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/f8d8c841-c360-4e87-b9dc-3a5f0d774c37/testfile_12.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:53:09.656927+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:47:57.470518+00:00"
+            },
+            "jobId": {
+                "S": "d5c1df38-e666-452f-a57f-569dceed9449"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/d5c1df38-e666-452f-a57f-569dceed9449.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/d5c1df38-e666-452f-a57f-569dceed9449/test2file_19.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:51:59.693346+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:48:00.934654+00:00"
+            },
+            "jobId": {
+                "S": "58a2b767-ac02-48ef-9dad-db4069273322"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/58a2b767-ac02-48ef-9dad-db4069273322.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/58a2b767-ac02-48ef-9dad-db4069273322/test2file_21.flac"
+            }
+        },
+        {
+            "updatedAt": {
+                "S": "2026-04-29T05:14:58.457315+00:00"
+            },
+            "userId": {
+                "S": "sonalidamute@gmail.com"
+            },
+            "status": {
+                "S": "SUCCESS"
+            },
+            "createdAt": {
+                "S": "2026-04-29T05:14:19.480408+00:00"
+            },
+            "jobId": {
+                "S": "bbeb783d-65e2-471d-9e06-8cd5ac812cd4"
+            },
+            "errorMessage": {
+                "NULL": true
+            },
+            "outputS3Path": {
+                "S": "s3://transcripto-transcript-bucket/sonalidamute@gmail.com/bbeb783d-65e2-471d-9e06-8cd5ac812cd4.txt"
+            },
+            "retryCount": {
+                "N": "0"
+            },
+            "inputS3Path": {
+                "S": "s3://transcripto-audio-bucket/audio/sonalidamute@gmail.com/bbeb783d-65e2-471d-9e06-8cd5ac812cd4/test_17.flac"
+            }
+        }
+    ],
+    "Count": 122,
+    "ScannedCount": 122
+}
