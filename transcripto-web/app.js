@@ -54,16 +54,19 @@
     } else {
       jobLine.classList.add("hidden");
     }
-    var tr = document.getElementById("transcript-line");
+    var box = document.getElementById("transcript-url-box");
+    var field = document.getElementById("transcript-url-field");
+    var link = document.getElementById("transcript-open-link");
     if (transcriptUrl) {
-      tr.innerHTML =
-        'Transcript: <a href="' +
-        transcriptUrl.replace(/"/g, "&quot;") +
-        '" target="_blank" rel="noopener noreferrer">open link</a>';
-      tr.classList.remove("hidden");
+      field.value = transcriptUrl;
+      link.href = transcriptUrl;
+      box.classList.remove("hidden");
+      box.setAttribute("aria-hidden", "false");
     } else {
-      tr.innerHTML = "";
-      tr.classList.add("hidden");
+      field.value = "";
+      link.removeAttribute("href");
+      box.classList.add("hidden");
+      box.setAttribute("aria-hidden", "true");
     }
     showStatusPanel(true);
   }
@@ -139,6 +142,35 @@
     tick();
     pollTimer = setInterval(tick, intervalMs);
   }
+
+  document.getElementById("transcript-copy-btn").addEventListener("click", function () {
+    var field = document.getElementById("transcript-url-field");
+    var btn = document.getElementById("transcript-copy-btn");
+    var url = field && field.value;
+    if (!url) return;
+    function revert() {
+      btn.textContent = "Copy";
+    }
+    function flash() {
+      btn.textContent = "Copied!";
+      setTimeout(revert, 1500);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(flash).catch(function () {
+        field.focus();
+        field.select();
+        try {
+          if (document.execCommand("copy")) flash();
+        } catch (_) {}
+      });
+    } else {
+      field.focus();
+      field.select();
+      try {
+        if (document.execCommand("copy")) flash();
+      } catch (_) {}
+    }
+  });
 
   document.getElementById("upload-form").addEventListener("submit", function (e) {
     e.preventDefault();

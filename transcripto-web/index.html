@@ -6,7 +6,7 @@
     <title>Transcripto — Upload audio</title>
     <link rel="stylesheet" href="styles.css" />
     <script>
-      window.__API_BASE__ = "";
+      window.__API_BASE__ = "http://18.207.238.156:8000";
     </script>
   </head>
   <body>
@@ -42,7 +42,27 @@
         <p id="status-message" class="status-message"></p>
         <div id="status-detail" class="status-detail hidden"></div>
         <p id="job-id-line" class="meta hidden"></p>
-        <p id="transcript-line" class="transcript hidden"></p>
+        <div id="transcript-url-box" class="transcript-url-box hidden" aria-hidden="true">
+          <span class="label">Transcript URL</span>
+          <input
+            id="transcript-url-field"
+            type="text"
+            readonly
+            class="transcript-url-field"
+            value=""
+            spellcheck="false"
+            autocomplete="off"
+          />
+          <div class="transcript-url-actions">
+            <button type="button" class="btn secondary" id="transcript-copy-btn">Copy</button>
+            <a
+              id="transcript-open-link"
+              class="transcript-open-link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer">Open in new tab</a>
+          </div>
+        </div>
       </section>
 
       <p id="error-banner" class="error-banner hidden" role="alert"></p>
