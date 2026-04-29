@@ -1,0 +1,21 @@
+# Run the auth service in Docker against Supabase CLI on the host
+# (`supabase start`: API/Kong ~54321, Postgres ~54322). Copy env from
+# `.env` or paste keys from `supabase status`.
+
+services:
+  auth:
+    build: .
+    image: sharks-auth:local
+    ports:
+      - "8080:8080"
+    environment:
+      DATABASE_URL: ${DATABASE_URL:-jdbc:postgresql://host.docker.internal:54322/postgres}
+      DATABASE_USER: ${DATABASE_USER:-postgres}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD:-postgres}
+      SUPABASE_URL: ${SUPABASE_URL:-http://host.docker.internal:54321}
+      SUPABASE_ANON_KEY: ${SUPABASE_ANON_KEY}
+      SUPABASE_SERVICE_ROLE_KEY: ${SUPABASE_SERVICE_ROLE_KEY}
+      SUPABASE_JWT_ISSUER: ${SUPABASE_JWT_ISSUER:-http://host.docker.internal:54321/auth/v1}
+      AUTH_INTERNAL_API_KEY: ${AUTH_INTERNAL_API_KEY:-change-me}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
