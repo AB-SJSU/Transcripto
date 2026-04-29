@@ -64,11 +64,12 @@ def increment_retry(job_id, current_retry):
         }
     )
 
-def send_notification(job_id, status, transcript_url=None):
+def send_notification(job_id, status, user_id,  transcript_url=None):
     message = {
         "jobId": job_id,
         "status": status,
         "transcriptUrl": transcript_url
+        "user__id": user_id
     }
 
     sqs.send_message(
@@ -76,7 +77,7 @@ def send_notification(job_id, status, transcript_url=None):
         MessageBody=json.dumps(message)
     )
 
-    print("Notification sent:", message)
+    print("Notification sent for user {user_id}::", message)
 
 # ---------- AUDIO ----------
 def validate_audio(input_path):
