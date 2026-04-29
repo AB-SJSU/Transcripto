@@ -20,5 +20,10 @@ nbproject/
 # Docs (not needed in image build)
 HELP.md
 
+# Local runtime secrets
+.env
+.env.*
+!.env.example
+
 # Local Supabase CLI / migrations — not required to compile the app
 supabase/

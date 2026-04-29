@@ -1,21 +1,27 @@
-# Run the auth service in Docker against Supabase CLI on the host
-# (`supabase start`: API/Kong ~54321, Postgres ~54322). Copy env from
-# `.env` or paste keys from `supabase status`.
+# Run only the auth service on EC2. Supabase Auth and Postgres are hosted
+# separately in Supabase Cloud and supplied through `.env`.
 
 services:
   auth:
     build: .
-    image: sharks-auth:local
+    image: sharks-auth:ec2
+    restart: unless-stopped
     ports:
       - "8080:8080"
     environment:
-      DATABASE_URL: ${DATABASE_URL:-jdbc:postgresql://host.docker.internal:54322/postgres}
-      DATABASE_USER: ${DATABASE_USER:-postgres}
-      DATABASE_PASSWORD: ${DATABASE_PASSWORD:-postgres}
-      SUPABASE_URL: ${SUPABASE_URL:-http://host.docker.internal:54321}
-      SUPABASE_ANON_KEY: ${SUPABASE_ANON_KEY}
-      SUPABASE_SERVICE_ROLE_KEY: ${SUPABASE_SERVICE_ROLE_KEY}
-      SUPABASE_JWT_ISSUER: ${SUPABASE_JWT_ISSUER:-http://host.docker.internal:54321/auth/v1}
-      AUTH_INTERNAL_API_KEY: ${AUTH_INTERNAL_API_KEY:-change-me}
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
+      DATABASE_URL: ${DATABASE_URL:?Set DATABASE_URL in .env}
+      DATABASE_USER: ${DATABASE_USER:?Set DATABASE_USER in .env}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD:?Set DATABASE_PASSWORD in .env}
+      DATABASE_MAX_POOL_SIZE: ${DATABASE_MAX_POOL_SIZE:-10}
+      DATABASE_MIN_IDLE: ${DATABASE_MIN_IDLE:-2}
+      SUPABASE_URL: ${SUPABASE_URL:?Set SUPABASE_URL in .env}
+      SUPABASE_ANON_KEY: ${SUPABASE_ANON_KEY:?Set SUPABASE_ANON_KEY in .env}
+      SUPABASE_SERVICE_ROLE_KEY: ${SUPABASE_SERVICE_ROLE_KEY:?Set SUPABASE_SERVICE_ROLE_KEY in .env}
+      SUPABASE_JWT_ISSUER: ${SUPABASE_JWT_ISSUER:?Set SUPABASE_JWT_ISSUER in .env}
+      AUTH_INTERNAL_API_KEY: ${AUTH_INTERNAL_API_KEY:?Set AUTH_INTERNAL_API_KEY in .env}
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:8080/actuator/health >/dev/null || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 40s
