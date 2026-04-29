@@ -112,8 +112,14 @@ def process_job(msg):
 
         output_s3 = f"s3://{TRANSCRIPT_BUCKET}/{output_key}"
 
+        signed_url = s3.generate_presigned_url(
+            "get_object",
+            Params={"Bucket": TRANSCRIPT_BUCKET, "Key": output_key},
+            ExpiresIn=604800,
+        )
+
         update_status(job_id, "SUCCESS", output=output_s3)
-        send_notification(job_id, "SUCCESS", output_s3)
+        send_notification(job_id, "SUCCESS", signed_url)
 
         print(f"Job {job_id} completed")
 

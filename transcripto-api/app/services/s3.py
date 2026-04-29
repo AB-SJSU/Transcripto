@@ -30,3 +30,16 @@ def generate_presigned_upload_url(s3_key: str, content_type: str) -> str:
         ExpiresIn=settings.presigned_url_expiry_seconds,
     )
     return url
+
+
+@with_retries(max_attempts=3, base_delay=0.5)
+def generate_presigned_download_url(s3_key: str) -> str:
+    url = s3_client.generate_presigned_url(
+        ClientMethod="get_object",
+        Params={
+            "Bucket": settings.s3_transcript_bucket,
+            "Key": s3_key,
+        },
+        ExpiresIn=settings.presigned_url_expiry_seconds,
+    )
+    return url

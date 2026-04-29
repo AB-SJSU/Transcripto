@@ -26,3 +26,10 @@ class StatusResponse(BaseModel):
     transcript_url: Optional[str] = None
     error_message: Optional[str] = None
     retry_count: int = 0
+
+
+class TranscriptResponse(BaseModel):
+    job_id: str
+    user_id: str
+    transcript_url: str
+    expires_in: int
