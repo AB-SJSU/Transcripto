@@ -1,5 +1,8 @@
 from fastapi import FastAPI, Request
 from fastapi.responses import RedirectResponse
+from starlette.middleware.cors import CORSMiddleware
+
+from app.config import settings
 from app.routes import upload, status
 
 app = FastAPI(
@@ -15,6 +18,15 @@ async def force_https(request: Request, call_next):
         return RedirectResponse(url=str(url), status_code=301)
     return await call_next(request)
 
+
+if settings.cors_origins_list:
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=settings.cors_origins_list,
+        allow_credentials=False,
+        allow_methods=["GET", "POST", "OPTIONS"],
+        allow_headers=["*"],
+    )
 
 app.include_router(upload.router, tags=["jobs"])
 app.include_router(status.router, tags=["jobs"])

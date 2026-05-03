@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transcripto — Upload audio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      window.__API_BASE__ = "http://18.207.238.156:8000";
+    </script>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="header">
+        <h1>Transcripto</h1>
+        <p class="subhead">Upload audio for transcription</p>
+      </header>
+
+      <form id="upload-form" class="card" novalidate>
+        <label class="field">
+          <span class="label">Email</span>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+            placeholder="you@example.com"
+          />
+        </label>
+
+        <label class="field">
+          <span class="label">Audio file</span>
+          <input id="audio" name="audio" type="file" accept="audio/*" required />
+        </label>
+
+        <button type="submit" class="btn primary" id="submit-btn">Upload & transcribe</button>
+      </form>
+
+      <section id="status-panel" class="card status hidden" aria-live="polite">
+        <h2 class="status-title">Job status</h2>
+        <p id="status-message" class="status-message"></p>
+        <div id="status-detail" class="status-detail hidden"></div>
+        <p id="job-id-line" class="meta hidden"></p>
+        <p id="transcript-line" class="transcript hidden"></p>
+      </section>
+
+      <p id="error-banner" class="error-banner hidden" role="alert"></p>
+    </main>
+    <script src="app.js" defer></script>
+  </body>
+</html>

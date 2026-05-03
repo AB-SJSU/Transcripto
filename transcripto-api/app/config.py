@@ -16,8 +16,18 @@ class Settings(BaseSettings):
 
     presigned_url_expiry_seconds: int = 3600
 
+    # Comma-separated list; empty means no browser origins allowed (add your S3 website URL later).
+    cors_allow_origins: str = ""
+
     class Config:
         env_file = ".env"
+
+    @property
+    def cors_origins_list(self) -> list[str]:
+        raw = self.cors_allow_origins.strip()
+        if not raw:
+            return []
+        return [o.strip() for o in raw.split(",") if o.strip()]
 
 
 settings = Settings()
