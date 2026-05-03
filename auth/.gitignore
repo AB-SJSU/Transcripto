@@ -1,7 +1,4 @@
 HELP.md
-.env
-.env.*
-!.env.example
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
@@ -38,3 +35,8 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Local Supabase Docker secrets ###
+infra/supabase-docker/.env
+.env
+

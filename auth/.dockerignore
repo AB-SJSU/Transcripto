@@ -1,29 +1,8 @@
-# Gradle / build output
+.build/
 .gradle/
-build/
-
-# IDE
 .idea/
-.vscode/
 *.iml
-.project
-.classpath
-.settings/
-.nb-gradle/
-nbproject/
-
-# Git
-.git/
-.gitattributes
-.gitignore
-
-# Docs (not needed in image build)
-HELP.md
-
-# Local runtime secrets
-.env
-.env.*
-!.env.example
-
-# Local Supabase CLI / migrations — not required to compile the app
-supabase/
+out/
+supabase/.branches
+supabase/.temp
+infra/supabase-docker/.env
