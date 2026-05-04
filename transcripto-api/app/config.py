@@ -19,6 +19,9 @@ class Settings(BaseSettings):
     # Comma-separated list; empty means no browser origins allowed (add your S3 website URL later).
     cors_allow_origins: str = ""
 
+    # Spring auth service base URL (no trailing path). Used to proxy POST /login and POST /signup.
+    auth_service_base_url: str = "http://127.0.0.1:8080"
+
     class Config:
         env_file = ".env"
 

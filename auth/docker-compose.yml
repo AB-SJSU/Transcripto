@@ -1,21 +1,10 @@
-# Supabase (official compose from infra/supabase-docker) + Spring auth-api.
+# Spring auth-api against Supabase Cloud (see .env.example).
 #
-# First-time: copy and edit env per https://supabase.com/docs/guides/self-hosting/docker
-#   cp infra/supabase-docker/.env.example infra/supabase-docker/.env
+# From auth/ :
+#   copy .env.example .env
+#   docker compose --env-file .env up -d --build
 #
-# Start (from this project root):
-#   docker compose --env-file infra/supabase-docker/.env up -d --build
-#
-# Apply auth module migrations to the stack DB (after "db" is healthy):
-#   docker compose --env-file infra/supabase-docker/.env exec -T db psql -U postgres -d postgres < supabase/migrations/20260101000001_init_app_role_and_user_roles.sql
-#   docker compose --env-file infra/supabase-docker/.env exec -T db psql -U postgres -d postgres < supabase/migrations/20260101000002_user_roles_rls.sql
-#   docker compose --env-file infra/supabase-docker/.env exec -T db psql -U postgres -d postgres < supabase/migrations/20260101000003_seed_user_roles.sql
-#
-include:
-  - path: infra/supabase-docker/docker-compose.yml
-    env_file:
-      - infra/supabase-docker/.env
-
+# Apply supabase/migrations/*.sql in the Supabase SQL Editor (or psql) before first run.
 services:
   auth-api:
     build:
@@ -23,17 +12,7 @@ services:
       dockerfile: Dockerfile
     container_name: sharks-auth-api
     restart: unless-stopped
-    depends_on:
-      db:
-        condition: service_healthy
-      kong:
-        condition: service_healthy
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://db:${POSTGRES_PORT:-5432}/${POSTGRES_DB:-postgres}?sslmode=disable
-      SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD}
-      SUPABASE_URL: http://kong:8000
-      SUPABASE_ANON_KEY: ${ANON_KEY}
-      SUPABASE_SERVICE_ROLE_KEY: ${SERVICE_ROLE_KEY}
+    env_file:
+      - .env
     ports:
       - "${AUTH_API_PORT:-8080}:8080"

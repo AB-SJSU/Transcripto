@@ -49,6 +49,35 @@ body {
   font-size: 0.95rem;
 }
 
+.nav-links {
+  margin-top: 0.65rem;
+  font-size: 0.9rem;
+}
+
+.nav-links a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--accent-hover);
+}
+
+.success-banner {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  background: rgba(61, 139, 253, 0.12);
+  border: 1px solid rgba(61, 139, 253, 0.35);
+  color: var(--accent-hover);
+  font-size: 0.9rem;
+}
+
+.auth-stack .card + .card {
+  margin-top: 1.25rem;
+}
+
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -72,20 +101,23 @@ body {
 }
 
 input[type="email"],
+input[type="password"],
 input[type="file"] {
   width: 100%;
   font: inherit;
   color: var(--text);
 }
 
-input[type="email"] {
+input[type="email"],
+input[type="password"] {
   padding: 0.55rem 0.65rem;
   border-radius: 6px;
   border: 1px solid var(--border);
   background: rgba(0, 0, 0, 0.25);
 }
 
-input[type="email"]:focus {
+input[type="email"]:focus,
+input[type="password"]:focus {
   outline: 2px solid var(--accent);
   outline-offset: 1px;
 }
