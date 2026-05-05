@@ -78,14 +78,11 @@
       headers: { "Content-Type": "application/json", Accept: "application/json" },
       body: JSON.stringify({ email: email, password: password }),
     })
-      .then(function (data) {
-        if (data && typeof data.accessToken === "string") {
-          try {
-            sessionStorage.setItem("accessToken", data.accessToken);
-          } catch (_) {}
-        }
-        showSuccess("Logged in successfully.");
-        setButtonBusy(btn, false, "Log in");
+      .then(function () {
+        try {
+          sessionStorage.setItem("transcriptoLoggedIn", "1");
+        } catch (_) {}
+        window.location.href = "index.html";
       })
       .catch(function (err) {
         showError(err.message || String(err));
@@ -122,7 +119,9 @@
       body: JSON.stringify({ email: email, password: password }),
     })
       .then(function () {
-        showSuccess("Account created. You can log in above.");
+        showSuccess(
+          "Account created. Please log in above using the same email and password you just entered."
+        );
         setButtonBusy(btn, false, "Create account");
       })
       .catch(function (err) {

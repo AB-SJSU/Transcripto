@@ -1,6 +1,18 @@
 (function () {
   "use strict";
 
+  var AUTH_KEY = "transcriptoLoggedIn";
+
+  try {
+    if (sessionStorage.getItem(AUTH_KEY) !== "1") {
+      window.location.replace("auth.html");
+      return;
+    }
+  } catch (_) {
+    window.location.replace("auth.html");
+    return;
+  }
+
   function apiBase() {
     var raw = typeof window.__API_BASE__ === "string" ? window.__API_BASE__.trim() : "";
     return raw.replace(/\/+$/, "");
@@ -168,6 +180,14 @@
     tick();
     pollTimer = setInterval(tick, intervalMs);
   }
+
+  document.getElementById("sign-out-link").addEventListener("click", function (e) {
+    e.preventDefault();
+    try {
+      sessionStorage.removeItem(AUTH_KEY);
+    } catch (_) {}
+    window.location.href = "auth.html";
+  });
 
   document.getElementById("transcript-copy-btn").addEventListener("click", function () {
     var field = document.getElementById("transcript-url-field");
