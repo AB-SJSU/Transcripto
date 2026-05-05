@@ -31,6 +31,40 @@
     btn.textContent = busy ? "Working…" : idleLabel;
   }
 
+  var loginForm = document.getElementById("login-form");
+  var signupForm = document.getElementById("signup-form");
+  var loginToggle = document.getElementById("toggle-login");
+  var signupToggle = document.getElementById("toggle-signup");
+  var activeMode = null;
+
+  function playFormEnter(formEl) {
+    formEl.classList.remove("form-enter");
+    // Force reflow so animation restarts on each mode switch.
+    void formEl.offsetWidth;
+    formEl.classList.add("form-enter");
+  }
+
+  function setAuthMode(mode) {
+    var showingLogin = mode !== "signup";
+    var nextMode = showingLogin ? "login" : "signup";
+    if (activeMode === nextMode) {
+      return;
+    }
+    activeMode = nextMode;
+
+    loginForm.classList.toggle("hidden", !showingLogin);
+    signupForm.classList.toggle("hidden", showingLogin);
+
+    loginToggle.classList.toggle("is-active", showingLogin);
+    signupToggle.classList.toggle("is-active", !showingLogin);
+    loginToggle.setAttribute("aria-selected", showingLogin ? "true" : "false");
+    signupToggle.setAttribute("aria-selected", showingLogin ? "false" : "true");
+
+    playFormEnter(showingLogin ? loginForm : signupForm);
+    hideError();
+    hideSuccess();
+  }
+
   async function fetchJson(url, options) {
     var res = await fetch(url, options);
     var text = await res.text();
@@ -50,7 +84,17 @@
     return data;
   }
 
-  document.getElementById("login-form").addEventListener("submit", function (e) {
+  loginToggle.addEventListener("click", function () {
+    setAuthMode("login");
+  });
+
+  signupToggle.addEventListener("click", function () {
+    setAuthMode("signup");
+  });
+
+  setAuthMode("login");
+
+  loginForm.addEventListener("submit", function (e) {
     e.preventDefault();
     hideError();
     hideSuccess();
@@ -90,7 +134,7 @@
       });
   });
 
-  document.getElementById("signup-form").addEventListener("submit", function (e) {
+  signupForm.addEventListener("submit", function (e) {
     e.preventDefault();
     hideError();
     hideSuccess();
@@ -119,8 +163,9 @@
       body: JSON.stringify({ email: email, password: password }),
     })
       .then(function () {
+        setAuthMode("login");
         showSuccess(
-          "Account created. Please log in above using the same email and password you just entered."
+          "Account created. Please log in using the same email and password you just entered."
         );
         setButtonBusy(btn, false, "Create account");
       })

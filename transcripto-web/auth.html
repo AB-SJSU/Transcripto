@@ -16,6 +16,29 @@
         <p class="subhead">Log in or create an account</p>
       </header>
 
+      <div class="auth-toggle" role="tablist" aria-label="Choose authentication mode">
+        <button
+          type="button"
+          id="toggle-login"
+          class="auth-toggle-btn is-active"
+          role="tab"
+          aria-selected="true"
+          aria-controls="login-form"
+        >
+          Log in
+        </button>
+        <button
+          type="button"
+          id="toggle-signup"
+          class="auth-toggle-btn"
+          role="tab"
+          aria-selected="false"
+          aria-controls="signup-form"
+        >
+          Sign up
+        </button>
+      </div>
+
       <form id="login-form" class="card" novalidate>
         <h2 class="status-title">Log in</h2>
         <label class="field">
@@ -42,7 +65,7 @@
         <button type="submit" class="btn primary" id="login-submit">Log in</button>
       </form>
 
-      <form id="signup-form" class="card" novalidate>
+      <form id="signup-form" class="card hidden" novalidate>
         <h2 class="status-title">Sign up</h2>
         <label class="field">
           <span class="label">Email</span>
