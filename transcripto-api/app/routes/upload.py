@@ -1,8 +1,9 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Depends
 from app.models import UploadRequest, UploadResponse
 from app.services.s3 import generate_presigned_upload_url
 from app.services.dynamodb import create_job, get_job
 from app.services.sqs import publish_job_message
+from app.dependencies.auth import get_current_user
 from app.config import settings
 import uuid
 
@@ -10,7 +11,7 @@ router = APIRouter()
 
 
 @router.post("/upload", response_model=UploadResponse)
-async def create_upload_job(request: UploadRequest):
+async def create_upload_job(request: UploadRequest, _: str = Depends(get_current_user)):
     """
     Step 1: Client calls this to start a transcription job.
     Returns a presigned S3 URL — client uploads the audio file directly to S3.
@@ -34,7 +35,7 @@ async def create_upload_job(request: UploadRequest):
 
 
 @router.post("/upload/confirm/{job_id}")
-async def confirm_upload(job_id: str, user_id: str, s3_key: str):
+async def confirm_upload(job_id: str, user_id: str, s3_key: str, _: str = Depends(get_current_user)):
     """
     Step 2: Client calls this AFTER successfully uploading to S3.
     This triggers the SQS message so the worker picks up the job.

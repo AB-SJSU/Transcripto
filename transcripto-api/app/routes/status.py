@@ -1,14 +1,15 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Depends
 from app.models import StatusResponse, TranscriptResponse
 from app.services.dynamodb import get_job
 from app.services.s3 import generate_presigned_download_url
+from app.dependencies.auth import get_current_user
 from app.config import settings
 
 router = APIRouter()
 
 
 @router.get("/status/{job_id}", response_model=StatusResponse)
-async def get_job_status(job_id: str):
+async def get_job_status(job_id: str, _: str = Depends(get_current_user)):
     """
     Poll this endpoint to check transcription job status.
     Frontend polls every 5 seconds until status is SUCCESS or FAILED.
@@ -32,7 +33,7 @@ async def get_job_status(job_id: str):
 
 
 @router.get("/transcript/{job_id}", response_model=TranscriptResponse)
-async def get_transcript(job_id: str, user_id: str):
+async def get_transcript(job_id: str, user_id: str, _: str = Depends(get_current_user)):
     """
     Returns a presigned S3 download URL for a completed transcript.
     Requires user_id to match the job owner — prevents users from accessing each other's transcripts.
