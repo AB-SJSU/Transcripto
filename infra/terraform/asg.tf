@@ -1,7 +1,7 @@
 resource "aws_launch_template" "worker_lt" {
   name          = "transcripto-worker-lt"
-  description   = "transcripto worker launch template"
-  image_id      = "ami-0accd42eb83b08f5a"
+  description   = "transcripto-worker-with DLQ logic modified"
+  image_id      = "ami-0818a7d085d24b23d"
   instance_type = "t3.small"
   key_name      = "cmpe281"
 
@@ -40,9 +40,9 @@ data "aws_autoscaling_group" "existing_worker_asg" {
 
 resource "aws_autoscaling_group" "worker_asg" {
   name                             = "transcripto-worker-asg"
-  min_size                         = 0
+  min_size                         = 1
   max_size                         = 3
-  desired_capacity                 = 0
+  desired_capacity                 = 1
   force_delete                     = false
   force_delete_warm_pool           = false
   ignore_failed_scaling_activities = false

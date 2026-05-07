@@ -6,7 +6,7 @@ resource "aws_sqs_queue" "dlq" {
 resource "aws_sqs_queue" "job" {
   name                       = "transcripto-job-queue"
   max_message_size           = 1048576
-  visibility_timeout_seconds = 600
+  visibility_timeout_seconds = 60
 
   redrive_policy = jsonencode({
     deadLetterTargetArn = aws_sqs_queue.dlq.arn
