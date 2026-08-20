@@ -6,6 +6,9 @@ Async audio transcription platform built on AWS — CMPE 281 course project.
 
 Transcripto is a cloud-native backend that accepts audio file uploads and returns transcriptions asynchronously. The API layer handles job creation and queuing; a separate worker fleet runs Whisper inference.
 
+## Architecture
+
+
 **Flow:**
 
 1. Client calls `POST /upload` → API creates a job in DynamoDB and returns a presigned S3 URL
