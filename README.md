@@ -8,6 +8,7 @@ Transcripto is a cloud-native backend that accepts audio file uploads and return
 
 ## Architecture
 
+![Transcripto architecture](app-architecture.png)
 
 **Flow:**
 
