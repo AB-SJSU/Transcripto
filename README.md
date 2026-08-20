@@ -203,7 +203,7 @@ ML Worker pipeline for async audio transcription using OpenAI Whisper on AWS.
 
 ---
 
-## 🚀 Overview
+## Overview
 
 This branch implements the **Worker/ML pipeline** for Transcripto.
 
@@ -211,7 +211,7 @@ The worker continuously polls SQS, processes audio files from S3, runs Whisper t
 
 ---
 
-## 🧠 Architecture
+## Architecture
 
 ```
 SQS → EC2 Worker → S3 (audio) → Whisper → S3 (transcripts)
@@ -223,7 +223,7 @@ SQS → EC2 Worker → S3 (audio) → Whisper → S3 (transcripts)
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 * Python 3.12
 * OpenAI Whisper (base model)
@@ -237,7 +237,7 @@ SQS → EC2 Worker → S3 (audio) → Whisper → S3 (transcripts)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 transcripto-worker/
@@ -251,7 +251,7 @@ transcripto-worker/
 
 ---
 
-## 🔁 Worker Flow
+## Worker Flow
 
 1. Poll SQS (long polling)
 2. Parse message:
@@ -284,7 +284,7 @@ transcripto-worker/
 
 ---
 
-## 🗄 DynamoDB Schema
+## DynamoDB Schema
 
 | Attribute    | Type   | Notes                                   |
 | ------------ | ------ | --------------------------------------- |
@@ -300,7 +300,7 @@ transcripto-worker/
 
 ---
 
-## 📥 Setup (EC2)
+## Setup (EC2)
 
 ### 1. SSH into instance
 
@@ -341,7 +341,7 @@ python -c "import torch; print(torch.__version__)"
 
 ---
 
-## ✅ Verify Whisper
+## Verify Whisper
 
 Create `verify.py`:
 
@@ -362,7 +362,7 @@ python verify.py
 
 ---
 
-## 🎧 Test Pipeline
+## Test Pipeline
 
 ```bash
 wget https://github.com/openai/whisper/raw/main/tests/jfk.flac -O test.wav
@@ -371,7 +371,7 @@ python pipeline_test.py
 
 ---
 
-## 🔄 Running Worker
+## Running Worker
 
 ```bash
 python worker.py
@@ -391,7 +391,7 @@ Job completed
 
 ---
 
-## 📤 SQS Test Message
+## SQS Test Message
 
 ```bash
 aws sqs send-message \
@@ -406,7 +406,7 @@ aws sqs send-message \
 
 ---
 
-## 📊 Batch Testing
+## Batch Testing
 
 ```bash
 for i in {1..5}; do
@@ -423,7 +423,7 @@ done
 
 ---
 
-## 📩 Notification Queue
+## Notification Queue
 
 Worker sends:
 
@@ -437,7 +437,7 @@ Worker sends:
 
 ---
 
-## ⚠️ Known Issues / Fixes
+## Known Issues / Fixes
 
 * `FP16 not supported on CPU` → expected
 * Ensure correct S3 key or you'll get `404 HeadObject`
@@ -446,19 +446,19 @@ Worker sends:
 
 ---
 
-## 📈 Current Status
+## Current Status
 
-* ✅ EC2 worker setup
-* ✅ Whisper preloaded (not per job)
-* ✅ SQS polling (long polling)
-* ✅ S3 input/output integration
-* ✅ DynamoDB status updates
-* ✅ Notification queue integration
-* ✅ End-to-end pipeline working
+* EC2 worker setup
+* Whisper preloaded (not per job)
+* SQS polling (long polling)
+* S3 input/output integration
+* DynamoDB status updates
+* Notification queue integration
+* End-to-end pipeline working
 
 ---
 
-## 🔜 Next Steps
+## Next Steps
 
 * Batch performance testing
 * Word Error Rate (WER) evaluation
