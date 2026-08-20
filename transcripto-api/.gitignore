@@ -1,0 +1,12 @@
+.env
+*.pem
+*.key
+key.pem
+cert.pem
+__pycache__/
+*.pyc
+.pytest_cache/
+tests/fixtures/*.mp3
+tests/fixtures/*.wav
+.DS_Store
+api-venv/

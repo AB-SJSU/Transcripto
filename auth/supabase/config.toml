@@ -1,0 +1,9 @@
+# Local Supabase CLI (migrations / db) — see https://supabase.com/docs/guides/cli/config
+
+project_id = "auth"
+
+[api]
+enabled = true
+
+[db]
+major_version = 15

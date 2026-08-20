@@ -1,0 +1,34 @@
+#envs
+transcripto-api/.env
+
+#misc
+aakruti-day-one.md
+transcripto-api/api.md
+.claude
+
+#library
+transcripto-api/api-venv
+
+#python
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+#ssl certs
+*.pem
+*.key
+cert.pem
+key.pem
+
+#test fixtures
+transcripto-api/tests/fixtures/*.mp3
+transcripto-api/tests/fixtures/*.wav
+
+#pytest
+.pytest_cache/
+
+
+aakruti-day-one.md
+aakruti-day-two.md
+aakruti-day-three.md
