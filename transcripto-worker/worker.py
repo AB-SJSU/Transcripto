@@ -1,64 +1,81 @@
-import os
 import boto3
-import whisper
 import json
+import os
+import time
 import subprocess
-from datetime import datetime, timezone
-from dotenv import load_dotenv
-
-# ---------- LOAD ENV ----------
-load_dotenv()
+import whisper
+from datetime import datetime
+from botocore.exceptions import ClientError
 
 AWS_REGION = os.getenv("AWS_REGION", "us-east-1")
-
 JOB_QUEUE_URL = os.getenv("JOB_QUEUE_URL")
 NOTIFY_QUEUE_URL = os.getenv("NOTIFY_QUEUE_URL")
-
 AUDIO_BUCKET = os.getenv("AUDIO_BUCKET")
 TRANSCRIPT_BUCKET = os.getenv("TRANSCRIPT_BUCKET")
+DDB_TABLE = os.getenv("DYNAMODB_TABLE")
 
-TABLE_NAME = os.getenv("DYNAMODB_TABLE")
-
-# ---------- AWS CLIENTS ----------
 sqs = boto3.client("sqs", region_name=AWS_REGION)
 s3 = boto3.client("s3", region_name=AWS_REGION)
 dynamodb = boto3.resource("dynamodb", region_name=AWS_REGION)
+table = dynamodb.Table(DDB_TABLE)
 
-table = dynamodb.Table(TABLE_NAME)
-
-# ---------- LOAD MODEL ----------
-print("Loading Whisper model...")
 model = whisper.load_model("base")
-print("Model loaded!")
-
-# ---------- UTILS ----------
-def now():
-    return datetime.now(timezone.utc).isoformat()
 
 def update_status(job_id, status, output=None, error=None):
     expr = "SET #s = :s, updatedAt = :u"
-    vals = {
-        ":s": status,
-        ":u": now()
-    }
+    names = {"#s": "status"}
+    values = {":s": status, ":u": datetime.utcnow().isoformat()}
 
     if output:
         expr += ", outputS3Path = :o"
-        vals[":o"] = output
-
+        values[":o"] = output
     if error:
         expr += ", errorMessage = :e"
-        vals[":e"] = error
+        values[":e"] = error
 
     table.update_item(
         Key={"jobId": job_id},
         UpdateExpression=expr,
-        ExpressionAttributeNames={"#s": "status"},
-        ExpressionAttributeValues=vals
+        ExpressionAttributeNames=names,
+        ExpressionAttributeValues=values
     )
 
-def validate_audio(input_path):
-    output_path = input_path + ".wav"
+def record_failure_attempt(job_id, error_msg=None):
+    """
+    Increment retryCount and mark FAILED. This makes DynamoDB retryCount align
+    with actual retry attempts (even though SQS receive count is maintained by SQS).
+    """
+    expr = "SET #s = :s, updatedAt = :u"
+    names = {"#s": "status"}
+    values = {":s": "FAILED", ":u": datetime.utcnow().isoformat()}
+
+    if error_msg:
+        expr += ", errorMessage = :e"
+        values[":e"] = error_msg
+
+    # Increment retryCount by 1 on every failed attempt
+    expr += " ADD retryCount :inc"
+    values[":inc"] = 1
+
+    table.update_item(
+        Key={"jobId": job_id},
+        UpdateExpression=expr,
+        ExpressionAttributeNames=names,
+        ExpressionAttributeValues=values
+    )
+
+def send_notification(job_id, status, transcript_url=None):
+    body = {"jobId": job_id, "status": status}
+    if transcript_url:
+        body["transcriptUrl"] = transcript_url
+
+    if NOTIFY_QUEUE_URL:
+        sqs.send_message(
+            QueueUrl=NOTIFY_QUEUE_URL,
+            MessageBody=json.dumps(body)
+        )
+
+def validate_audio(input_path, output_path):
     subprocess.run([
         "ffmpeg", "-y",
         "-i", input_path,
@@ -66,42 +83,34 @@ def validate_audio(input_path):
         "-ac", "1",
         output_path
     ])
-    return output_path
 
-def send_notification(job_id, status, transcript_url=None):
-    message = {
-        "jobId": job_id,
-        "status": status,
-        "transcriptUrl": transcript_url
-    }
-
-    sqs.send_message(
-        QueueUrl=NOTIFY_QUEUE_URL,
-        MessageBody=json.dumps(message)
-    )
-
-# ---------- MAIN JOB ----------
 def process_job(msg):
-    body = json.loads(msg["Body"])
-
-    job_id = body["jobId"]
-    user_id = body["userId"]
-    key = body["s3Key"]
-
-    print(f"\nProcessing job: {job_id}")
-
+    """
+    Returns:
+      True  -> job processed successfully, safe to delete SQS message
+      False -> job failed, DO NOT delete message so SQS can retry -> DLQ
+    """
+    job_id = None
     try:
+        body = json.loads(msg["Body"])
+        job_id = body["jobId"]
+        user_id = body["userId"]
+        s3_key = body["s3Key"]
+        bucket = body.get("bucket", AUDIO_BUCKET)
+
+        print(f"Processing job: {job_id}")
+
         update_status(job_id, "PROCESSING")
 
-        local_input = f"/tmp/{job_id}"
-        s3.download_file(AUDIO_BUCKET, key, local_input)
+        local_in = f"/tmp/{job_id}"
+        local_wav = f"/tmp/{job_id}.wav"
+        s3.download_file(bucket, s3_key, local_in)
 
-        clean_audio = validate_audio(local_input)
+        validate_audio(local_in, local_wav)
 
-        result = model.transcribe(clean_audio)
-        text = result["text"]
-
-        print("Transcription:", text[:100], "...")
+        result = model.transcribe(local_wav)
+        text = result.get("text", "")
+        print("Transcription: ", text[:80], "...")
 
         output_file = f"/tmp/{job_id}.txt"
         with open(output_file, "w") as f:
@@ -112,23 +121,25 @@ def process_job(msg):
 
         output_s3 = f"s3://{TRANSCRIPT_BUCKET}/{output_key}"
 
-        signed_url = s3.generate_presigned_url(
-            "get_object",
-            Params={"Bucket": TRANSCRIPT_BUCKET, "Key": output_key},
-            ExpiresIn=604800,
-        )
-
         update_status(job_id, "SUCCESS", output=output_s3)
-        send_notification(job_id, "SUCCESS", signed_url)
+        send_notification(job_id, "SUCCESS", output_s3)
 
         print(f"Job {job_id} completed")
+        return True
 
     except Exception as e:
         print("Error:", e)
-        update_status(job_id, "FAILED", error=str(e))
-        send_notification(job_id, "FAILED")
+        # Best-effort updates; even if these fail, still return False so message retries
+        if job_id:
+            try:
+                # increment retryCount + mark FAILED + store latest errorMessage
+                record_failure_attempt(job_id, error_msg=str(e))
+                send_notification(job_id, "FAILED")
+            except Exception as inner:
+                print("Error while updating FAILED status/notification:", inner)
 
-# ---------- SQS LOOP ----------
+        return False
+
 def poll_sqs():
     print("Polling SQS...")
 
@@ -136,7 +147,8 @@ def poll_sqs():
         response = sqs.receive_message(
             QueueUrl=JOB_QUEUE_URL,
             MaxNumberOfMessages=1,
-            WaitTimeSeconds=10
+            WaitTimeSeconds=10,
+            AttributeNames=["ApproximateReceiveCount"]  # makes SQS receive count visible if you want to print it
         )
 
         if "Messages" not in response:
@@ -144,13 +156,23 @@ def poll_sqs():
             continue
 
         for msg in response["Messages"]:
-            process_job(msg)
+            # Optional debug print to compare with retryCount in DynamoDB
+            rc = msg.get("Attributes", {}).get("ApproximateReceiveCount")
+            if rc:
+                print(f"SQS ApproximateReceiveCount: {rc}")
 
-            sqs.delete_message(
-                QueueUrl=JOB_QUEUE_URL,
-                ReceiptHandle=msg["ReceiptHandle"]
-            )
+            ok = process_job(msg)
 
-# ---------- START ----------
+            # ✅ DLQ fix: delete ONLY on success.
+            if ok:
+                sqs.delete_message(
+                    QueueUrl=JOB_QUEUE_URL,
+                    ReceiptHandle=msg["ReceiptHandle"]
+                )
+            else:
+                # Do not delete → message becomes visible again after visibility timeout
+                # and will be retried until maxReceiveCount, then moved to DLQ.
+                print("Job failed; leaving message in queue for retry/DLQ.")
+
 if __name__ == "__main__":
     poll_sqs()
